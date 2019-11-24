@@ -1,0 +1,134 @@
+.footer
+	.blog-footer
+		padding-top 75px
+		padding-bottom 94px
+		@media screen and (max-width: 960px)
+			padding-top 0
+		@media screen and (max-width: 850px)
+			padding-bottom 55px
+
+.blog-footer
+	.container
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		@media screen and (max-width: 960px)
+			flex-direction column
+			align-items flex-start
+
+.blog-foot--description
+	min-width 320px
+	@media screen and (max-width: 1200px)
+		min-width 250px
+	@media screen and (max-width: 960px)
+		width 100%
+		margin-bottom 40px
+	h3
+		color: #ffffff
+		font-family: fPSB
+		font-size: 112px
+		margin-bottom 8px
+		@media screen and (max-width: 1200px)
+			font-size 83px
+	p
+		color: #ffffff
+		font-family: fPSB
+		font-size: 13px
+		line-height: 33px
+		margin-bottom 20px
+	
+	.go-blog
+		position relative
+		color: #88ff07
+		font-family: fPSB
+		font-size: 16px
+		text-transform: uppercase
+		padding-right 20px
+		@media screen and (max-width: 854px)
+			font-size 14px
+		&:before
+			position absolute
+			right 0
+			top 4px
+			width 7px
+			height 7px
+			content ''
+			display block
+			border-style solid
+			border-width 3px 3px 0 0
+			border-color #88ff07
+			transform rotateZ(45deg)
+
+.blog-foot--post
+	display flex
+	flex-direction row
+	margin 0 -12px
+	@media screen and (max-width: 1200px)
+		margin 0 -10px
+	@media screen and (max-width: 960px)
+		// margin 0
+		justify-content space-between
+	@media screen and (max-width: 850px)
+		justify-content flex-start
+	@media screen and (max-width: 480px)
+		justify-content center
+		width 100%
+		margin 0
+	
+	.foot-items
+		padding 0 12px
+		@media screen and (max-width: 1200px)
+			padding 0 10px
+		@media screen and (max-width: 960px)
+			// padding 0
+		
+		&:last-child
+			@media screen and (max-width: 720px)
+				display none
+		
+		&:not(:first-child)
+			@media screen and (max-width: 480px)
+				display none
+
+
+.foot-post
+	display flex
+	flex-direction column
+	max-width 270px
+	background-color: #12162d
+	
+	@media screen and (max-width: 480px)
+		max-width 284px
+	
+	.foot-post--contents
+		padding 33px 28px 24px
+		
+		p
+			font-family: fPSB
+			font-size: 19px
+			color: #ffffff
+			margin-bottom 25px
+		
+		.date-post
+			font-family: fPSB
+			font-size: 13px
+			line-height: 2.54
+			color: #ffffff
+	
+	.foot-post--img
+		position relative
+		height 200px
+		width 100%
+		overflow hidden
+		
+		img
+			position absolute
+			imgC()
+			height 102%
+			width auto
+			@media screen and (max-width: 480px)
+				top 0
+				tt(-50%, 0)
+				height auto
+				width 100%

@@ -1,0 +1,19 @@
+if pagecurent === "home"
+	header.header.header-home(style="background-image: url(img/bg-home.jpg)")
+		include top-line
+
+		.header-home--content
+			.container
+				.home-content--items
+					.heading-home
+						h1 
+							span DOMINATE #[br]
+							| ULTRA HAVOC
+						a(href="#").button.button-green Shop Now
+				.home-content--items.controller-wrap
+					img(src="img/controller-home.png", alt="").controller-header.ml-58
+
+else
+	header.header
+		include top-line
+

@@ -1,0 +1,107 @@
+.footer
+	position absolute
+	left 0
+	bottom 0
+	width 100%
+	background: #050714
+	padding 70px 0 150px
+	overflow hidden
+	@media screen and (max-width: 854px)
+		padding-top 100px
+		padding-bottom 15px
+	
+	.container
+		display flex
+		flex-direction row
+		align-items flex-start
+		
+		@media screen and (max-width: 600px)
+			flex-direction column
+			flex-wrap wrap
+
+.footer-menu
+	display flex
+	flex-direction row
+	flex-grow 1
+	
+	@media screen and (max-width: 900px)
+		padding-right 20px
+	@media screen and (max-width: 854px)
+		flex-wrap wrap
+	
+	@media screen and (max-width: 600px)
+		width 100%
+		padding-right 0
+		max-width: 314px
+		margin: 0 auto
+		padding-left: 30px
+
+.footer-menu--items
+	width 100%
+	@media screen and (max-width: 854px)
+		width 50%
+		margin-bottom 45px
+	&:nth-child(1)
+		max-width 210px
+		@media screen and (max-width: 854px)
+			max-width 100%
+	&:nth-child(2)
+		max-width 190px
+		@media screen and (max-width: 854px)
+			max-width 100%
+	&:nth-child(3)
+		max-width 225px
+		@media screen and (max-width: 854px)
+			max-width 100%
+	&:nth-child(4)
+		max-width 250px
+		@media screen and (max-width: 854px)
+			max-width 100%
+	h5
+		color: rgba(118, 210, 19, 0.54)
+		font-family: fPSB
+		font-size: 13px
+		margin-bottom 17px
+	
+	ul
+		li
+			&:not(:last-child)
+				margin-bottom 15px
+				@media screen and (max-width: 854px)
+					margin-bottom 0
+			// &:hover
+			// 	a
+			// 		c #9f9ea8
+			a
+				color: #ffffff
+				font-family: fPSB
+				font-size: 13px
+				text-decoration none
+				trn(.15s)
+				@media screen and (max-width: 854px)
+					line-height 33px
+				&:hover
+					c #9f9ea8
+
+.footer-contact
+	min-width 314px
+	min-height: 184px
+	border-radius: 10px
+	background-color: #26D13D
+	padding 30px 40px 43px
+	
+	@media screen and (max-width: 600px)
+		margin auto
+	@media screen and (max-width: 360px)
+		min-width 100%
+	
+	h4
+		color: #ffffff
+		font-family: fPSB
+		font-size: 25px
+		margin-bottom 6px
+	p
+		color: #ffffff
+		font-family: fPSB
+		font-size: 14px
+		margin-bottom 20px

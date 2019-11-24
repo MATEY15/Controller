@@ -1,0 +1,279 @@
+.gaming-trend
+	position relative
+	background-image: linear-gradient(70deg, #2d0c10 -28%, #050714 47%)
+	padding-top 100px
+	padding-bottom 120px
+	@media screen and (max-width: 850px)
+		padding-top 254px
+		background-image: linear-gradient(49deg, #2d0c10 0%, #050714 100%)
+	@media screen and (max-width: 600px)
+		padding-bottom 66px
+	
+	&>.container
+		position relative
+
+.gaming-trend--wrapper
+	display flex
+	flex-direction row
+	justify-content space-between
+	@media screen and (max-width: 850px)
+		flex-direction column
+
+.gaming-trend--desc
+	padding-left 30px
+	display flex
+	align-items center
+	@media screen and (max-width: 1200px)
+		padding-left 0
+	@media screen and (max-width: 850px)
+		margin-bottom 62px
+
+.heading-pro
+	position relative
+	color: #fc006a
+	font-family: fPSB
+	font-size: 97px
+	text-transform: uppercase
+	display inline-block
+	@media screen and (max-width: 991px)
+		font-size 72px
+	@media screen and (max-width: 850px)
+		font-size 47px
+	
+	&:before
+		position absolute
+		left 0
+		bottom -8px
+		width 100%
+		height 6px
+		content ''
+		display block
+		background: #fc006a
+		@media screen and (max-width: 850px)
+			height 4px
+
+	span
+		color: #ffffff
+
+.slider-comment--block
+	.navigate-slider
+		max-width 505px
+
+.comment-rating
+	margin-bottom 20px
+	p
+		color: #ffffff
+		font-size: 27px
+	svg
+		margin-left 5px
+		fill #f8e71c
+
+.comment-logo
+	margin-bottom 32px
+
+.comment-desc
+	p
+		color: rgba(255, 255, 255, 0.99)
+		font-family: fPSL
+		font-size: 23px
+		line-height: 30px
+		@media screen and (max-width: 768px)
+			font-size: 19px
+			line-height: 30px
+
+.community-wrapper
+	display flex
+	flex-direction row
+	justify-content space-between
+	@media screen and (max-width: 960px)
+		flex-direction column-reverse
+
+.community-slide
+	.slider-comment--block
+		max-width 505px
+	.comment-author--text
+		display flex
+		flex-direction column
+		justify-content center
+		.icon-star
+			margin-left 0
+			margin-right 10px
+		p
+			color: #b9b9b9
+			font-family: fPSR
+			font-size: 19px
+			margin-bottom 5px
+
+.community-slide
+	.comment-rating
+		margin-bottom 0
+		p
+			color: #ffffff
+			font-family: fPSR
+			font-size: 27px
+
+.comment-author
+	display flex
+	flex-direction row
+	margin-bottom 19px
+	
+	.comment-author--img
+		margin-right 22px
+
+
+.community-name
+	display flex
+	flex-direction column
+	justify-content center
+	padding-right 75px
+	padding-bottom 62px
+	@media screen and (max-width: 1024px)
+		padding-right 0
+	.heading-name--community
+		color: #fff
+		font-family: fPSB
+		font-size: 75px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		@media screen and (max-width: 768px)
+			font-size 47px
+			
+		span
+			position relative
+			display inline-block
+			color: #88ff07
+			&:before
+				position absolute
+				bottom -16px
+				left 0
+				content ''
+				width 100%
+				height: 3px
+				background-color: #95ff20
+				@media screen and (max-width: 600px)
+					height 2px
+					bottom -4px
+		
+
+
+.gaming-trend--slider
+	padding-right 90px
+	@media screen and (max-width: 1200px)
+		padding-right 0
+	.slider-comment
+		max-width 505px
+		
+		.item-slide
+			// margin-right 80px
+
+.bg-gaming-trend
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	
+	.container
+		position relative
+		height 100%
+
+
+.triagle
+	position absolute
+	left -264px
+	top -110px
+	@media screen and (max-width: 1200px)
+		left -110px
+	@media screen and (max-width: 854px)
+		max-width 260px
+		left -132px
+		top -52px
+
+.triagle-gray
+	position absolute
+	left: -82px
+	top: 274px
+
+.x-icon
+	position absolute
+	right 20px
+	top: 274px
+
+.square-icon
+	position: absolute
+	bottom: 164px
+	right: -120px
+	@media screen and (max-width: 1440px)
+		right 0
+
+.navigate-slider
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	padding-top 17px
+	border-top 1px solid #292c3d
+	margin-top 35px
+	@media screen and (max-width: 600px)
+		border-top none
+		margin-top 8px
+
+.arrow-custom,
+.arrow-custom2
+	&.arrows-pink
+		.slick-arrow
+			background: #fc006a
+	&.arrows-green
+		.slick-arrow
+			background: #76d213
+	.slick-arrow
+		width: 47px
+		height: 47px
+		brr(50%)
+		cursor pointer
+	
+	.slick-prev
+		margin-right 20px
+		display none !important
+		svg
+			position relative
+			transform rotateY(180deg)
+			left -2px
+	
+	.slick-next
+		svg
+			position relative
+			left 2px
+	
+
+.dots-custom,
+.dots-custom2
+	&.dots-pink
+		.slick-dots
+			li
+				background-color: #40466a
+	&.dots-green
+		.slick-dots
+			li
+				background: #40466a
+				&.slick-active,
+				&:hover
+					background: #88ff07
+
+	.slick-dots
+		display flex
+		flex-direction row
+		li
+			width: 21px
+			font-size 0
+			height: 4px
+			border-radius: 2px
+			cursor pointer
+			trn(.2s)
+			&:not(:last-child)
+				margin-right 5px
+			
+			&.slick-active,
+			&:hover
+				background: #fc006a

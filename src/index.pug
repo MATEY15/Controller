@@ -1,0 +1,161 @@
+extends layout.pug
+
+block variabl
+	- var title = "Home"
+	- var pagecurent = "home"
+	- var showreturn = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.champs
+			.container
+				.heading-champs
+					h3 OUR CHAMPS
+				.champs-wrapper
+					.champs-fifty
+						a(href="#").champs-items
+							.champ-dot
+								.champ-dot--icon.bg-dot--pink
+								| Chrome
+							.champs-items--img
+								img(src="img/product/controller-product.png", alt="controller")
+							.champs-items--info
+								p ULTRA DOMINATOR
+								span.price-champs £63.00
+					.champs-fifty
+						a(href="#").champs-items
+							.champ-dot
+								.champ-dot--icon.bg-dot--blue
+								| Ultra #[span Pro]
+							.champs-items--img
+								img(src="img/product/controller-product.png", alt="controller")
+							.champs-items--info
+								p GLORY VENOM
+								span.price-champs £63.00
+					.champs-fifty
+						a(href="#").champs-items
+							.champ-dot
+								.champ-dot--icon.bg-dot--blue
+								| Ultra #[span Pro]
+							.champs-items--img
+								img(src="img/product/controller-product.png", alt="controller")
+							.champs-items--info
+								p POISON ARROW
+								span.price-champs £63.00
+					.champs-fifty
+						a(href="#").champs-items
+							.champ-dot
+								.champ-dot--icon.bg-dot--rainbow
+								| Ultra #[span Pro]
+							.champs-items--img
+								img(src="img/product/controller-product.png", alt="controller")
+							.champs-items--info
+								p SEA MASTER
+								span.price-champs £63.00
+				
+				.champs-button--wrapper
+					a(href="#").button.champs-button
+						| SEE ALL CONTROLERS
+						+iconSvg('12', '20', '0 0 12 20', 'icon-arrow-right')
+
+		section.costumization
+			.controllerBig-wrapper
+				.container
+					.controllerImg-left
+						img(src="img/controllerBig2.png", alt="")
+					.controllerImg-center
+						img(src="img/controllerBig1.png", alt="")
+					.controllerImg-right
+						img(src="img/controllerBig3.png", alt="")
+			.container
+				.controllerBig--content
+					span.text-Bafora No limits
+					h3 COSTUMIZATION
+					p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante.
+					a(href="#").button.button-greenBig CUSTUMIZE NOW
+
+		include include/module/gaming-trend
+
+		section.customization-section
+			.container
+				.customiz-wrapper
+					.customiz-controller
+						img(src="img/leading_custom.png", alt="")
+					.customiz-texts
+						h3 Leading Customization
+						p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+						a(href="#").button.button-greenBig TAKE A LOOK
+
+		section.community-section
+			.community-offset
+				.community-background
+					.container-full
+						.bgX-icon
+							img(src="img/icon/group-4.svg", alt="")
+
+						.triangle2-icon
+							<svg xmlns="http://www.w3.org/2000/svg" width="460" height="442" viewBox="0 0 460 442"><defs><mask id="6v5ob" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M65 61h334v315H65z"/><path d="M120.787 69L399 229.495 76 387z"/></mask><filter id="6v5oa" width="502" height="485" x="-19" y="-23" filterUnits="userSpaceOnUse"><feOffset dy="2" in="SourceGraphic" result="FeOffset1264Out"/><feGaussianBlur in="FeOffset1264Out" result="FeGaussianBlur1265Out" stdDeviation="29.6 29.6"/></filter></defs><g><g transform="rotate(4 232 218.5)"><g filter="url(#6v5oa)"><path fill="none" d="M120.787 69L399 229.495 76 387z" mask="url(&quot;#6v5ob&quot;)"/><path fill="#ff4e74" style="opacity: .1;" d="M120.787 69L399 229.495 76 387z"/></g><path fill="none" stroke="#8dff11" stroke-miterlimit="50" stroke-width="5" d="M120.787 69v0L399 229.495v0L76 387v0z"/></g></g></svg>
+
+						.square2-icon
+							img(src="img/icon/square.png", alt="")
+
+						.square-small
+							img(src="img/icon/square-small.png", alt="")
+
+				.container
+					.community-wrapper
+						.community-slide
+							.slider-comment--block
+								.slider-community
+									.item-slide
+										.comment-author
+											.comment-author--img
+												img(src="img/Oval-author.png", alt="")
+											.comment-author--text
+												p Danny Brown
+												.comment-rating
+													p #[+iconSvg('22', '21', '0 0 22 21', 'icon-star')]
+														| 1/5
+										.comment-desc
+											p “If you’re willing to spend £54.99 on a brand new Dualshock PS4 Controller at your local retailer, do us both a favour and buy it from The Controller People, as for just a little bit more you can own something really awesome, really personal and ultimately really special”
+									.item-slide
+										.comment-author
+											.comment-author--img
+												img(src="img/Oval-author.png", alt="")
+											.comment-author--text
+												p Danny Brown
+												.comment-rating
+													p #[+iconSvg('22', '21', '0 0 22 21', 'icon-star')]
+														| 2/5
+										.comment-desc
+											p “If you’re willing to spend £54.99 on a brand new Dualshock PS4 Controller at your local retailer, do us both a favour and buy it from The Controller People, as for just a little bit more you can own something really awesome, really personal and ultimately really special”
+									.item-slide
+										.comment-author
+											.comment-author--img
+												img(src="img/Oval-author.png", alt="")
+											.comment-author--text
+												p Danny Brown
+												.comment-rating
+													p #[+iconSvg('22', '21', '0 0 22 21', 'icon-star')]
+														| 5/5
+										.comment-desc
+											p “If you’re willing to spend £54.99 on a brand new Dualshock PS4 Controller at your local retailer, do us both a favour and buy it from The Controller People, as for just a little bit more you can own something really awesome, really personal and ultimately really special”
+
+								.navigate-slider
+									.dots-custom2.dots-green
+									.arrow-custom2.arrows-green
+
+						.community-name
+							h3.heading-name--community
+								| Community
+								span CHOICE
+
+
+		//- +iconSvg('34', '32', '0 0 34 32', 'icon-pallete')
+
+block footer
+	include include/footer

@@ -1,0 +1,41 @@
+.top-line
+	.logo-wrapper
+		a(href="#").logo-link
+			img(src="img/logo.png", alt="")
+
+	.top-line--left
+		
+		nav.menu-wrapper
+			ul
+				li
+					a(href="#") ELITE PRO
+				li
+					a(href="#") DYI MODS
+				li
+					a(href="#") ALL CONTROLLERS
+				li
+					a(href="#")
+						+iconSvg('20', '20', '0 0 20 20', 'icon-pallete')
+						| CUSTOM BUILD
+	
+		.user-block
+			ul
+				li
+					a(href="#")
+						+iconSvg('16', '19', '0 0 16 19', 'icon-cart')
+				li.user-list
+					a(href="#")
+						+iconSvg('18', '18', '0 0 18 18', 'icon-user')
+
+		.burger-menu
+			span
+			span
+			span
+
+if showreturn === true
+	.return-top
+		p.return-top--heading FREE RETURNS
+		p Return whatever you don't love within 30 days. #[a(href="#") Learn more]
+
+		a(href="#").close-return
+			+iconSvg('13', '13', '0 0 13 13', 'icon-close')

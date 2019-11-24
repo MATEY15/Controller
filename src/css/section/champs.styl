@@ -1,0 +1,190 @@
+.champs
+	background #050714
+	padding-top 38px
+	padding-bottom 80px
+	@media screen and (max-width: 600px)
+		padding-top 28px
+		padding-bottom 50px
+
+.heading-champs
+	margin-bottom 92px
+	@media screen and (max-width: 600px)
+		margin-bottom 21px
+	h3
+		color: #ffffff
+		font-family: fPSB
+		font-size: 38px
+		line-height: 49px
+		text-transform: uppercase
+		@media screen and (max-width: 600px)
+			font-size: 28px
+			line-height: 49px
+
+.champs-wrapper
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin 0 -10px
+	
+	.champs-fifty
+		width calc(100% / 2)
+		padding 10px
+		@media screen and (max-width: 600px)
+			width 100%
+
+.champs-items
+	position relative
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	max-width: 580px
+	min-height: 385px
+	border-radius: 6px
+	overflow hidden
+	padding-top 54px
+	padding-left 35px
+	padding-right 35px
+	padding-bottom 35px
+	@media screen and (max-width: 1200px)
+		padding-top 70px
+	@media screen and (max-width: 800px)
+		min-height 100%
+	@media screen and (max-width: 600px)
+		box-shadow: 0 7px 16px -2px rgba(0, 0, 0, 0.11)
+		background-image: radial-gradient(circle 172px at 38.27% 398.42%, #21264e 0%, #121125 100%)
+
+	& > div
+		position relative
+		z-index 20
+	
+	&:hover
+		// brr(6px)
+		&:after
+			opacity 1
+			visibility visible
+	
+	&:after,
+	&:before
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		content ''
+		display block
+		trn(.23s)
+	
+	&:before
+		background-image: -webkit-linear-gradient(130deg, #0d0c1b 103%, #0d0c1b 92%, #171627 28%)
+		background-image: -o-linear-gradient(130deg, #0d0c1b 103%, #0d0c1b 92%, #171627 28%)
+		background-image: linear-gradient(220deg, #0d0c1b 103%, #0d0c1b 92%, #171627 28%)
+		opacity: 0.35
+		@media screen and (max-width: 600px)
+			background none
+	
+	&:after
+		box-shadow: 0 7px 16px -2px rgba(0, 0, 0, 0.11)
+		background-image: radial-gradient(circle at 31% 44%, #21264e, #121125 50%)
+		opacity 0
+		visibility hidden
+	
+.champ-dot
+	position absolute !important
+	top 11px
+	right 11px
+	border-radius: 7px
+	color: #c1c3df
+	font-family: fPSM
+	font-size: 17px
+	letter-spacing: 0.1px
+	line-height: 26px
+	padding 10px 15px 11px
+	z-index 20
+	overflow hidden
+	
+	span
+		c #5150ff
+	
+	&:before
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		content ''
+		display block
+		background-color: #16182c
+		opacity: 0.4
+	
+	.champ-dot--icon
+		position relative
+		top 2px
+		display inline-block
+		width 16px
+		height 16px
+		brr(50%)
+		margin-right 10px
+		
+		&.bg-dot--pink
+			background-image: linear-gradient(to bottom, #f82bff, #fd1363)
+		
+		&.bg-dot--blue
+			background: #5150ff
+		
+		&.bg-dot--rainbow
+			background-image: linear-gradient(to bottom, #ffc700, #291ffa 48%, #fd1363 98%)
+
+
+.champs-items--img
+	position relative
+	max-width 366px
+	margin 0 auto 20px
+	text-align center
+	
+	&:before
+		position absolute
+		bottom 2px
+		left 50%
+		content ''
+		width: 355px
+		height: 35px
+		-webkit-filter: blur(24px)
+		filter: blur(24px)
+		background-color: #000000
+		tt(-50%, 0)
+	
+	img
+		position relative
+		z-index 20
+		max-width 100%
+
+.champs-items--info
+	text-align center
+	p
+		font-family: fPSBl
+		font-size: 19px
+		margin-bottom 4px
+		color: #ffffff
+	
+	.price-champs
+		color: #abff4e
+		font-family: fPSL
+		font-size: 21px
+
+.champs-button--wrapper
+	text-align center
+	margin-top 63px
+	@media screen and (max-width: 600px)
+		margin-top 10px
+	.champs-button
+		position relative
+		.icon-arrow-right
+			position absolute
+			width 10px
+			height 15px
+			right 19px
+			top 50%
+			tt(0, -50%)
+			@media screen and (max-width: 600px)
+				width 7px
+				height 12px

@@ -1,0 +1,130 @@
+.costumization
+	background: #050714
+	padding-top 80px
+	padding-bottom 145px
+	@media screen and (max-width: 600px)
+		padding-top 50px
+		padding-bottom 40px
+		
+
+.controllerBig-wrapper
+	position relative
+	overflow hidden
+	.container
+		position relative
+		text-align center
+		@media screen and (max-width: 600px)
+			min-width 600px
+			left: 50%
+			transform: translate(-50% , 0)
+	
+	.controllerImg-center
+		position relative
+		z-index 30
+		
+	.controllerImg-left,
+	.controllerImg-right,
+	.controllerImg-center
+		img
+			@media screen and (max-width: 1200px)
+				max-width 80%
+			@media screen and (max-width: 960px)
+				max-width 60%
+			@media screen and (max-width: 600px)
+				max-width 240px
+	
+	.controllerImg-left,
+	.controllerImg-right
+		position absolute
+		z-index 10
+		@media screen and (max-width: 854px)
+			max-width 65%
+		img
+			@media screen and (max-width: 854px)
+				width 100%
+			@media screen and (max-width: 600px)
+				max-width 50%
+		
+		&:before
+			position absolute
+			bottom 0
+			width 200px
+			height 200px
+			content ''
+			display block
+			background: #050714
+			@media screen and (max-width: 960px)
+				width 100px
+				height 100px
+			@media screen and (max-width: 854px)
+				display none
+		
+	.controllerImg-left
+		left -135px
+		top 30px
+		@media screen and (max-width: 854px)
+			left -160px
+			top 25px
+		@media screen and (max-width: 600px)
+			text-align left
+			left 38px
+			top 8px
+		&:before
+			right 0
+			@media screen and (max-width: 960px)
+				right 80px
+	
+	.controllerImg-right
+		top 12px
+		right -175px
+		@media screen and (max-width: 1200px)
+			top 24px
+		@media screen and (max-width: 800px)
+			right -160px
+		@media screen and (max-width: 600px)
+			text-align right
+			right 38px
+			top 4px
+		&:before
+			left 0
+			@media screen and (max-width: 960px)
+				left 100px
+
+.controllerBig--content
+	max-width 870px
+	margin -40px auto 0
+	color #fff
+	text-align center
+	@media screen and (max-width: 600px)
+		margin-top 38px
+	
+	span
+		opacity: 0.8
+		font-size: 54px
+		color: #ffffff
+		@media screen and (max-width: 600px)
+			font-size 46px
+	
+	h3
+		font-family: fANB
+		font-size: 59px
+		color: #ffffff
+		margin-bottom 6px
+		@media screen and (max-width: 600px)
+			font-size 28px
+	
+	p
+		font-family: fPSL
+		font-size: 18px
+		line-height: 1.67
+		text-align: center
+		color: #ffffff
+		@media screen and (max-width: 600px)
+			color: #c1c3df
+			font-family: fPSL
+			font-size: 17px
+			letter-spacing: 0.1px
+			line-height: 26px
+	
+	.button
+		margin-top 30px
