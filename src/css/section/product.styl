@@ -1,0 +1,1124 @@
+.section-product
+	position relative
+	overflow hidden
+	background: #06081A
+
+.product-main
+	position relative
+
+.product-view
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	padding-top 40px
+	padding-bottom 70px
+	@media screen and (max-width: 854px)
+		flex-direction column
+		padding-top 0
+		padding-bottom 0
+		margin-left -20px
+		margin-right -20px
+
+.product-img
+	text-align center
+	@media screen and (max-width: 854px)
+		padding-top 60px
+		padding-bottom 65px
+	img
+		@media screen and (max-width: 1200px)
+			max-width 85%
+
+.product-info--head
+	padding 38px 26px 32px
+	background: #080618
+
+.product-information
+	min-width 486px
+	max-width 486px
+	@media screen and (max-width: 1200px)
+		max-width 100%
+		width 100%
+		min-width auto
+	
+	h2
+		color: #ffffff
+		font-family: fPSL
+		font-size: 31px
+		line-height: 49px
+		font-weight normal
+	.product-price
+		color: #abff4e
+		font-family: fPSL
+		font-size: 21px
+
+.counter-product
+	display flex
+	flex-direction row
+	margin-top 20px
+	margin-bottom 30px
+	
+	.qty-input
+		margin-right 14px
+
+
+.qty-input
+	display flex
+	flex-direction row
+	justify-content space-between
+	height: 42px
+	border-radius: 1px
+	background-color: #2f2d46
+	position: relative
+	width: 88px
+
+	i
+		position relative
+		cursor: pointer
+		text-align: center
+		user-select: none
+		transition: all 150ms ease-out
+		width: 30px
+		&:before
+			position absolute
+			top 50%
+			left 50%
+			display block
+			content ''
+			width 10px
+			height 2px
+			background: #fff
+			brr(2px)
+			tt(-50%, -50%)
+		&.more
+			&:after
+				position absolute
+				top 50%
+				left 50%
+				display block
+				content ''
+				width 2px
+				height 10px
+				background: #fff
+				brr(2px)
+				tt(-50%, -50%)
+	
+	input
+		border: 0px solid
+		color: #ffffff
+		background: #2F2D46
+		font-family: fMR
+		font-size: 14px
+		text-align: center
+		outline: none
+		width: 24px
+
+.icon-info
+	width: 13px
+	min-width: 13px
+	height: 13px
+	display flex
+	align-items center
+	justify-content center
+	background: #43466a
+	color: #8eff13
+	font-family: fPSB
+	font-size: 10px
+	brr(50%)
+	&.icon-info--big
+		width 17px
+		height 17px
+
+.dispatch-wrapper
+	display flex
+	flex-direction row
+	align-items flex-start
+	flex-wrap wrap
+
+.dispatch-items
+	display flex
+	flex-direction row
+	border-radius: 25px
+	padding 14px 15px
+	border: 1px solid rgba(151, 151, 151, 0.17)
+	
+	&:not(:last-child)
+		margin-right 14px
+		@media screen and (max-width: 480px)
+			margin-right 0
+			margin-bottom 14px
+	
+	p
+		color: #ffffff
+		font-family: fPSB
+		font-size: 14px
+	
+	.icon-info
+		margin-left 15px
+	
+.deliveri-day
+	position relative
+	padding-left 13px
+	margin-left 6px
+	&:before
+		position absolute
+		top 50%
+		margin-top -4px
+		left 0
+		display block
+		content ''
+		width 8px
+		height 8px
+		background-color: #f8e71c
+		brr(50%)
+
+.product-option--wrap
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin 0 -7px
+	padding-top 14px
+	
+	.product-option--fifty
+		width 50%
+		padding 0 7px
+
+.name-select
+	display block
+	color #ffffff
+	font-family fPSR
+	font-size 14px
+	margin-bottom 6px
+
+.disable-block
+	opacity .11
+
+/* checkbox */
+
+.dispatch-checkbox
+	display: block
+	margin-bottom: 14px
+
+.dispatch-checkbox:last-child
+	margin-bottom: 0
+
+.dispatch-checkbox input
+	display: none
+	z-index: -1
+	opacity: 0
+
+.dispatch-text
+	position: relative
+	display flex
+	flex-direction row
+	align-items center
+	color: #ffffff
+	font-family: fPSB
+	font-size: 14px
+	padding: 1px 0 0 26px
+	cursor: pointer
+	user-select: none
+	span
+		color #8eff13
+	
+.dispatch--black-text
+	color #33434b
+	font-family fPSB
+	font-size 12px
+	padding-left 26px
+
+.dispatch-text:before
+	content: ''
+	position: absolute
+	top: 0px
+	left: 0
+	width: 13px
+	height: 13px
+	border-radius: 2px
+	border: 2px solid rgba(151, 151, 151, 0.45)
+	background: rgba(228, 220, 220, 0.13)
+
+.dispatch-checkbox input:checked + .dispatch-text:before
+	background: rgba(228,220,220,.13) url(../img/icon/checkbox-icon--green.svg)
+	background-size: 9px
+	background-repeat: no-repeat
+	background-position: 2px 3px
+	border: 2px solid rgba(142, 255, 19, 0.38)
+
+.checkbox-option
+	.dispatch-text
+		color #bfc3e2
+		font-family fPSBl
+		font-size 15px
+		&:before
+			top 2px
+			border-radius: 4px
+			background-position: 1px 3px !important
+		.icon-info--big
+			margin-left 8px
+
+/* checkbox End */
+
+/* Radio */
+
+.radio-color
+	display: inline-block
+	margin: 0 7px
+	margin-bottom 10px
+	min-width 60px
+	max-width 60px
+	&:last-child
+		margin-right: 0
+	& input 
+		position: absolute
+		z-index: -1
+		opacity: 0
+		margin: 10px 0 0 7px
+		display: none
+	
+	&.no-checked
+		.radio-color--text span.radio-view
+			&:after
+				content: ''
+				position: absolute
+				top: 22px
+				left: 13px
+				width: 21px
+				height: 3px
+				background: #8F8E9A
+				opacity 1
+				visibility visible
+				trn(.2s)
+				transform rotateZ(-45deg)
+
+.radio-color.no-checked input:checked + .radio-color--text span.radio-view:after
+	background: #8eff13
+
+.radio-color--text
+	position: relative
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	cursor: pointer
+	user-select: none
+	max-width 60px
+	color: rgba(255, 255, 255, 0.55) !important
+	font-family: fPSM !important
+	font-size: 14px !important
+	text-align center !important
+
+.radio-view
+	position relative
+	width 46px
+	height 46px
+	display inline-block
+	brr(50%)
+	margin-bottom 10px
+	&:before
+		content: ''
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 43px
+		height: 43px
+		border: 2px solid rgba(255, 255, 255, 0.33)
+		border-radius: 50%
+		trn(.15s)
+		
+	&:after
+		content: ''
+		position: absolute
+		top: 19px
+		left: 17px
+		width: 13px
+		height: 10px
+		background-image: url(../img/icon/checkbox-green.svg)
+		background-repeat no-repeat
+		opacity: 0
+		visibility hidden
+		trn(.2s)
+
+.radio-color input:checked + .radio-color--text .radio-view:before
+	border: 2px solid #8eff13
+	background: rgba(51, 51, 51, 0.5)
+	
+.radio-color input:checked + .radio-color--text .radio-view:after
+	opacity: 1
+	visibility visible
+
+/* Radio End */
+
+.product-checked
+	display flex
+	flex-direction row
+	align-items flex-start
+	flex-wrap wrap
+	margin 0 -7px
+
+.tab-controller
+	background: #100F29
+
+.tab-controller--list
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	border-top 1px solid #15142D
+	border-bottom 1px solid #15142D
+	
+	li
+		position relative
+		display flex
+		align-items center
+		justify-content center
+		width calc(100% / 6)
+		min-height 66px
+		cursor pointer
+		trn(.15s)
+		@media screen and (max-width: 480px)
+			width calc(100% / 3)
+		
+		&:not(:last-child)
+			border-right 1px solid #131527
+		
+		&.active
+			background: #080a1a
+			&:before
+				opacity 1
+				visibility visible
+		
+		&:before
+			position absolute
+			left 0
+			bottom 0
+			content ''
+			width 100%
+			height 1px
+			box-shadow: 0 0 4px #692bff
+			background-image: linear-gradient(180deg, #a255ff 0%, #692bff 100%)
+			opacity 0
+			visibility hidden
+			trn(.15s)
+
+.extra-checked
+	.checkbox-option
+		.dispatch-text
+			color #fff
+			&:before
+				top 0
+
+.tab-controller--hide
+	.pane-ofset
+		padding 24px 20px 24px 30px
+	.pane
+		
+		min-height 350px
+		display none
+		@media screen and (max-width: 540px)
+			min-height 300px
+		
+		.product-option--top
+			padding 30px 30px
+			border-bottom 1px solid #090c21
+			.extra-checked
+				&:not(:last-child)
+					margin-bottom 25px
+		.product-option--items
+			padding 30px 30px
+			border-top 1px solid #090c21
+			.checkbox-option .dispatch-text:before
+				top 0
+		
+		h3
+			display flex
+			flex-direction row
+			align-items center
+			color: #bfc3e2
+			font-family: fPSBl
+			font-size: 17px
+			margin-bottom 26px
+
+			.icon-info
+				margin-left 20px
+
+.price-radio
+	color: #8eff13
+	font-family: fPSR
+	font-size: 14px
+
+
+
+// Product Description
+
+.product-description
+	position relative
+	background: #06081A
+	padding-top 66px
+	padding-bottom 86px
+
+.tab-heading--desc
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items flex-start
+	border-bottom 1px solid #2B2D3C
+	@media screen and (max-width: 854px)
+		flex-direction column
+		border-bottom 0
+	
+	.button-review
+		position relative
+		top -10px
+
+.tab-link--desc
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	@media screen and (max-width: 854px)
+		width 100%
+		margin-bottom 37px
+		border-bottom 1px solid #2B2D3C
+	
+	li
+		position relative
+		color: #ffffff
+		font-family: fABl
+		font-size: 15px
+		cursor pointer
+		padding-bottom 32px
+		user-select none
+		@media screen and (max-width: 940px)
+			font-size 17px
+		span
+			font-family: fABo
+		
+		&.active
+			&:before
+				opacity 1
+				visibility visible
+		
+		&:before
+			position absolute
+			bottom -1px
+			left 0
+			content ''
+			display block
+			width 100%
+			height 3px
+			background: #85ff00
+			trn(.15s)
+			opacity 0
+			visibility hidden
+		
+		&:not(:last-child)
+			margin-right 40px
+			@media screen and (max-width: 854px)
+				margin-right 20px
+
+.tab-hide--desc
+	.pane
+		display none
+		padding-top 45px
+		color: #ffffff
+		.height-15
+			height 15px
+		.button-download
+			margin-bottom 34px
+		h3
+			color: #ffffff
+			font-family: fAND
+			font-size: 21px
+			margin-bottom 12px
+			&.green
+				color: #85ff00
+				font-family: fAND
+				font-size: 21px
+		b, strong, p
+			margin-bottom 32px
+			&.green
+				color: #85ff00
+
+		img.mr-30
+			margin-right 30px
+		
+		a
+			font-size: 16px
+			line-height: 32px
+			color: #85ff00
+		
+		p
+			font-family: fPSL
+			font-size: 16px
+			line-height: 32px
+		b, strong
+			font-family: fPSM
+			font-size: 16px
+			line-height: 32px
+			font-weight normal
+			display block
+		
+		.list-descript
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			margin-bottom 45px
+			li
+				position relative
+				color: #ffffff
+				font-family: fPSL
+				font-size: 15px
+				line-height: 32px
+				&:not(:last-child)
+					padding-right 25px
+					margin-right 25px
+					&:before
+						position absolute
+						top 50%
+						right 0
+						content ''
+						height 22px
+						width 1px
+						background: #1e2241
+						tt(0, -50%)
+				span
+					color: #85ff00
+
+.sub--comment-items
+	display flex
+	flex-direction row
+	align-items center
+	margin-left 90px
+	margin-top 20px
+	@media screen and (max-width: 414px)
+		margin-left 0
+	
+	.sub--comment--img
+		width 36px
+		height 36px
+		overflow hidden
+		brr(50%)
+		margin-right 15px
+	
+	h4
+		color: #ffffff
+		font-family: fPSR
+		font-size: 15px
+		font-weight normal
+		margin-bottom 6px
+	p
+		color: #ffffff
+		font-family: fABo
+		font-size: 18px
+
+.comment-wrap
+	padding-right 20px
+
+.comment-items
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	
+	&:not(:first-child)
+		margin-top 35px
+		@media screen and (max-width: 414px)
+			margin-top 25px
+
+.comment-items--main
+	display flex
+	flex-direction row
+
+.comment-items--img
+	width 60px
+	height 60px
+	brr(50%)
+	margin-right 28px
+	@media screen and (max-width: 414px)
+		width 36px
+		height 36px
+		margin-right 15px
+	
+	img
+		width 102% !important
+
+.comment-items--text
+	.name-comment
+		display flex
+		flex-direction row
+		color: #ffffff
+		font-family: fPSR
+		font-size: 15px
+		font-weight normal
+		@media screen and (max-width: 414px)
+			flex-direction column
+			margin-bottom 3px
+	
+	.game-comment
+		font-family: fPSR
+		font-size: 15px
+		color: rgba(165, 165, 165, 0.56)
+		margin-bottom 6px
+		span
+			color: rgba(255, 255, 255, 0.56)
+	
+	.text-comment
+		color: #ffffff
+		font-family: fABo
+		font-size: 18px
+
+.comment-items--date
+	@media screen and (max-width: 768px)
+		display none
+	span
+		color: rgba(255, 255, 255, 0.47)
+		font-family: fABo
+		font-size: 14px
+
+.rating-gefault
+	display flex
+	flex-direction row-reverse
+	max-width 96px
+	margin-left 14px
+	margin-bottom 8px
+	@media screen and (max-width: 414px)
+		margin-left 0
+		margin-top 5px
+
+.rating-star
+	position relative
+	min-width 19px
+	display inline-block
+	cursor pointer
+	.icon-star2
+		position absolute
+		top 0
+		left 0
+		opacity 0
+		visibility hidden
+		trn(.15s)
+	
+	.icon-star1,
+	.icon-star2
+		fill #d6c925
+	
+.rating-big
+	max-width 160px
+	margin-left 0
+	margin-bottom: 0
+	.rating-star
+		min-width 32px
+	svg
+		width 26px
+		height 26px
+	.icon-star1
+		fill  #303758
+
+.rating-gefault > .rating-star:hover .icon-star2,
+.rating-gefault > .rating-star:hover ~ .rating-star .icon-star2,
+.rating-gefault > .rating-star.is-active .icon-star2,
+.rating-gefault > .rating-star.is-active ~ .rating-star .icon-star2
+	opacity 1
+	visibility visible
+
+
+.customization-wrapper
+	position relative
+	padding-top 80px
+	padding-bottom 108px
+	background: #01030f
+	@media screen and (max-width: 540px)
+		padding-top 30px
+		padding-bottom 40px
+	
+.customization-heading
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	border-bottom 1px solid #0F111C
+	padding-bottom 37px
+	margin-bottom 50px
+	@media screen and (max-width: 540px)
+		padding-bottom 0
+		border-bottom 0
+		margin-bottom 34px
+	h3
+		color: #ffffff
+		font-family: fPSB
+		font-size: 37px
+		@media screen and (max-width: 540px)
+			font-size 32px
+	
+	.button-send
+		@media screen and (max-width: 540px)
+			display none
+
+
+.product-option
+	min-height 480px
+	background: #090c21
+	border-top 1px solid #0F1226
+	
+	.product-option--items
+		padding 28px 5px 28px 30px
+			
+		&:not(:first-child)
+			padding-top: 35px
+			border-top 1px solid #13162A
+
+	.custom-select
+		margin-bottom 12px
+	
+	h3
+		color: #bfc3e2
+		font-family: fPSBl
+		font-size: 17px
+		margin-bottom 12px
+
+	p, a
+		color: #ffffff
+		font-family: fPSR
+		font-size: 14px
+		line-height: 20px
+		a
+			color: #8eff13
+			text-decoration none
+.pane .faq-description,
+.faq-description
+	dt
+		color #85ff00
+		font-family fAH
+		font-size 21px
+		margin-bottom 48px
+	
+	dd
+		margin-left 0
+		margin-bottom 50px
+		img
+			margin 24px 0 40px
+		p
+			color #ffffff
+			font-family fPSR
+			font-size 16px
+			line-height 25px
+			margin-bottom 18px
+
+.option-head
+	display flex !important
+	flex-direction row !important
+	align-items center !important
+	color: #bfc3e2 !important
+	font-family: fPSBl !important
+	font-size: 17px !important
+	margin-bottom 26px !important
+	.icon-info
+		margin-left 20px
+
+
+
+.controller-white--bg-big
+	min-height 896px
+	box-shadow 0 7px 16px -2px rgba(0, 0, 0, 0.11)
+	background-image -webkit-linear-gradient(#bdbdee 0%, #f1f0fe 100%)
+	background-image -o-linear-gradient(#bdbdee 0%, #f1f0fe 100%)
+	background-image linear-gradient(#bdbdee 0%, #f1f0fe 100%)
+
+.product-view--custome
+	display flex
+	flex-direction row
+	justify-content space-between
+	@media screen and (max-width: 940px)
+		flex-direction column
+	
+	&.product-view--custome-white
+		.product-name--heading
+			color #0f0d25
+
+.product-view--right
+	position relative
+	min-width 480px
+	max-width 480px
+	width 100%
+	height 100%
+	min-height calc(100vh - 73px)
+	background: #0F0D25
+	padding-bottom 54px
+	@media screen and (max-width: 940px)
+		min-height 100%
+		max-width 100%
+		min-width 100%
+
+
+
+.product-view--left
+	display: flex
+	flex-direction: column
+	width: 100%
+	padding-top 35px
+	@media screen and (max-width: 480px)
+		padding-top 0
+	
+	.product-view-img--wrap
+		display flex
+		flex-direction row
+		justify-content center
+		align-items center
+		height 100%
+
+.product-main--full
+	.container
+		@media screen and (max-width: 1200px)
+			max-width 100%
+			padding-left 0
+			padding-right 0
+
+.product-desctop
+	@media screen and (max-width: 480px)
+		display none
+.product-mobile
+	display none
+	@media screen and (max-width: 480px)
+		display inline-block
+
+.menu-radio
+	position absolute
+	top calc(65px + 50px)
+	left 0
+	width 100%
+	max-width 480px
+	height calc(100% - 65px)
+	box-shadow 0 7px 16px -2px rgba(0, 0, 0, 0.11)
+	background-color #0f0d25
+	z-index 100
+	trn(.2s)
+	opacity 0
+	visibility hidden
+	@media screen and (max-width: 940px)
+		max-width 100%
+	@media screen and (max-width: 480px)
+		height auto
+	&.is-active
+		top: 65px
+		opacity 1
+		visibility visible
+		@media screen and (max-width: 480px)
+			top 127px
+	
+	li
+		border-top 1px solid #16142B
+		trn(.2s)
+		&:hover
+			background: rgba(142, 255, 19, 0.65)
+		a
+			position relative
+			display block
+			padding 18px 40px
+			color #ffffff
+			font-family fPSBl
+			font-size 20px
+			&.is-active
+				color #8eff13
+				&:before
+					opacity 1
+					visibility visible
+			&:before
+				position absolute
+				left 17px
+				top 50%
+				margin-top -5px
+				content ''
+				width 11px
+				height 10px
+				background-image: url(../img/icon/arrow_marker.png)
+				background-repeat no-repeat
+				trn(.15s)
+				opacity 0
+				visibility hidden
+
+.product-checked--button
+	position absolute
+	bottom 0
+	left 0
+	width 100%
+
+.button.button-tocard
+	position relative
+	min-height 54px
+	width 100%
+	background-color #8eff13
+	padding 18px 20px
+	color #000000
+	font-family fPSBl
+	font-size 17px
+	letter-spacing 0.36px
+	text-transform uppercase
+	
+	.price-cart
+		color #0f0f0f
+		font-family fPSM
+		font-size 17px
+		position absolute
+		top 18px
+		left 40px
+		@media screen and (max-width: 480px)
+			left 18px
+
+.product-sidebar
+	// position relative
+
+.product-sidebar--head
+	display flex
+	flex-direction row
+	justify-content space-between
+	padding 22px 25px
+	background: #0b0a1d
+	.burger-default
+		display block
+
+.nav-sidebar
+	position relative
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	border-top 1px solid #19153e
+	border-bottom 1px solid #19153e
+	background: #0b0a1d
+	
+	li
+		width 50%
+		&:first-child
+			border-right 1px solid #19153e
+		a
+			display flex
+			flex-direction row
+			justify-content center
+			align-items center
+			min-height 60px
+			color #ffffff
+			font-family fPSB
+			font-size 16px
+			text-transform uppercase
+			
+			&.disable
+				opacity .17
+		
+		svg
+			fill #8eff13
+			width 15px
+			height 16px
+		
+		.link-sidebar--back
+			svg
+				margin-right 20px
+				transform rotateY(180deg)
+		.link-sidebar--next
+			svg
+				margin-left 20px
+
+.product-sidebar
+	height 100%
+
+.product-sidebar--checked
+	background: #0F0D25
+	height 100%
+	display flex
+	flex-direction column
+	justify-content space-between
+	flex-grow 1
+	
+	.product-checked--wrap
+		padding 38px 34px
+
+.product-checked--item
+	&:not(:last-child)
+		margin-bottom 4px
+	h3
+		color #c1c3df
+		font-family fPSM
+		font-size 20px
+		letter-spacing 0.12px
+		line-height 26px
+		font-weight 500
+		margin-bottom 15px
+		span
+			color #5150ff
+	
+	.radio-color
+		margin 0
+		max-width 100%
+		min-width auto
+	.radio-view
+		width 36px
+		height 36px
+		margin-bottom 0
+		&:before
+			width 32px
+			height 32px
+		&:after
+			top 13px
+			left 12px
+
+.product-checked--checked
+	padding-left 20px
+	.radio-color
+		margin-right 22px
+		margin-bottom 24px
+
+.product-view--head
+	display flex
+	flex-direction row
+	@media screen and (max-width: 940px)
+		padding-left 20px
+		padding-right 20px
+	@media screen and (max-width: 480px)
+		display none
+	.dispatch-items
+		margin-left 14px
+	.product-name--heading
+		display flex
+		flex-direction row
+		align-items center
+		color #ffffff
+		font-family fPSL
+		font-size 20px
+		.icon-pallete
+			margin-right 20px
+
+.product-view--buy
+	padding-left 40px
+	@media screen and (max-width: 940px)
+		padding-left 20px
+		padding-right 20px
+	@media screen and (max-width: 480px)
+		display none
+	.price-head
+		display block
+		color #abff4e
+		font-family fPSL
+		font-size 21px
+		line-height normal
+		margin-bottom 15px
+
+.product-view-img
+	position relative
+	width 100%
+	padding 0 30px
+	@media screen and (max-width: 940px)
+		text-align center
+		padding 30px 20px
+	@media screen and (max-width: 480px)
+		padding 50px 20px 55px
+	
+	img
+		max-width 100%
+	
+	.front
+		position absolute
+		bottom 0
+		left 0
+		z-index 10
+	
+	.back
+		position absolute
+		top 0
+		right 0

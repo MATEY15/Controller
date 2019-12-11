@@ -1,0 +1,87 @@
+extends layout.pug
+
+block variabl
+	- var title = "Shop"
+	- var pagecurent = "shop"
+	- var showreturn = true
+	- var showPost = false
+	- var showArticle = true
+	- var containerSmall = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-post
+			
+			.bg-triangle
+				.container
+					img(src="img/blog_shape.svg", alt="")
+
+			.post-wrapper
+				.container-post
+					.post-heading
+						h1 The Ultimate Game Changers
+						span.date-post on Jun 24, 2019
+
+						.social-link
+							ul
+								li
+									a(href="#")
+										+iconSvg('543', '543', '0 0 543 543', 'icon-twitter')
+								li
+									a(href="#")
+										+iconSvg('96', '96', '0 0 96 96', 'icon-facebook')
+								li
+									a(href="#")
+										+iconSvg('169', '169', '0 0 169 169', 'icon-inst')
+								li
+									a(href="#")
+										+iconSvg('543', '543', '0 0 543 543', 'icon-github')
+				
+				.full-img
+					img(src="img/post-img.jpg", alt="")
+
+				.container-post
+					p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus. #[strong Nullam quis risus eget] urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor.
+					.height-60
+					h3 What’s on your desk right now?
+					img(src="img/post-img2.jpg", alt="")
+					p Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Curabitur tempus porttitor. Cras mattis consectetur purus sit amet fermentum. How to create. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Curabitur \tempus porttitor. Cras mattis consectetur purus sit amet fermentum.Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.
+
+				.comment-wrapper
+					form
+						.form-heading
+							h4 Write Comment
+						.form-items
+							label YOUR NAME
+							input(type="text" )
+						.form-items
+							label COMMENT
+							textarea
+						.form-items--button
+							.share-post
+								p.share-post--name Share
+								.social-link
+									ul
+										li
+											a(href="#")
+												+iconSvg('543', '543', '0 0 543 543', 'icon-twitter')
+										li
+											a(href="#")
+												+iconSvg('96', '96', '0 0 96 96', 'icon-facebook')
+										li
+											a(href="#")
+												+iconSvg('169', '169', '0 0 169 169', 'icon-inst')
+										li
+											a(href="#")
+												+iconSvg('543', '543', '0 0 543 543', 'icon-github')
+							button.button.button-send Send
+
+
+
+
+block footer
+	include include/footer

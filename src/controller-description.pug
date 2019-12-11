@@ -1,0 +1,78 @@
+extends layout.pug
+
+block variabl
+	- var title = "Description"
+	- var pagecurent = "description"
+	- var showreturn = true
+	- var showPost = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.controller-description
+			.controller-desc--top
+				.controller-desc--bg
+					.controller-desc--bg-big
+					.controller-desc--bg-small
+				.container.container-description
+					.heading-controller
+						h3 THE #[br]
+							| ULTIMATE #[span PRO]
+					.controller-hover
+						.controller-hover--img
+							.dot-hover.dexi-disk
+							.dot-hover.analog
+							.dot-hover.analog-add
+							.dot-hover.click-stics
+							.dot-hover.sst
+							.dot-hover.grip-force
+							img(src="img/controller-desc.png", alt="")
+			.container.container-description
+				.controller-desc--wrapper
+					.controller-desc--items
+						.controller-desc--img
+							.img-center--width
+								img(src="img/desc-img1.jpg", alt="")
+						.controller-desc--content
+							h3 Dexi Disk
+							p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+
+					.controller-desc--items
+						.controller-desc--img
+							.img-center--width
+								img(src="img/desc-img2.jpg", alt="")
+						.controller-desc--content
+							h3 Interchangeable Analog
+							p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis,
+
+					.controller-desc--items
+						.controller-desc--img
+							.img-center--width
+								img(src="img/desc-img3.jpg", alt="")
+						.controller-desc--content
+							h3 Click Stics
+							p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. #[a(href="#") Vivamus massa] lacinia nec mauris quis, cursus ornare ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+					.controller-desc--items
+						.controller-desc--img.circle-icon.circle-icon--rt
+							.img-center--width
+								img(src="img/desc-img4.jpg", alt="")
+						.controller-desc--content
+							h3 SST’s
+							p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante.
+
+					.controller-desc--items
+						.controller-desc--img.circle-icon.circle-icon--lt
+							.img-center--width
+								img(src="img/desc-img5.jpg", alt="")
+						.controller-desc--content
+							h3 Grip Force
+							p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+
+		//- +iconSvg('34', '32', '0 0 34 32', 'icon-pallete')
+
+block footer
+	include include/footer

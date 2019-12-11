@@ -1,0 +1,43 @@
+extends layout.pug
+
+block variabl
+	- var title = "Treck Order"
+	- var pagecurent = "treck-order"
+	- var showreturn = false
+	- var showPost = false
+	- var showArticle = false
+	- var containerSmall = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-contact
+
+			.bg-triangle
+				.container
+					img(src="img/blog_shape.svg", alt="")
+
+			.container-small
+				.contact-wrapper
+					.contact-heading
+						h1 Track Order
+						p To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.
+
+					.contact-form
+						form
+							.form-items
+								label Order ID ( Found in your order confirmation email )
+								input(type="text")
+							.form-items
+								label Billing email ( Email you used during checkout )
+								input(type="text")
+							.form--button
+								button.button.button-send Send
+
+					.height-60
+
+block footer
+	include include/footer

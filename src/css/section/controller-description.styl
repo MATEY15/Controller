@@ -1,0 +1,253 @@
+.controller-description
+	background: #01030F
+	padding-bottom 160px
+	padding-top 80px
+	overflow hidden
+	@media screen and (max-width: 768px)
+		padding-top 50px
+		padding-bottom 50px
+
+	.container-description
+		position relative
+		max-width 970px
+		z-index 10
+
+
+.controller-desc--top
+	position relative
+	
+.controller-desc--bg
+	position absolute
+	left 0
+	top -200px
+	width 100%
+	&.bg-top
+		top 0
+
+.controller-desc--bg-big
+	width: 100%
+	height: 901px
+	box-shadow: 0 7px 16px -2px rgba(0, 0, 0, 0.11)
+	background-image: radial-gradient(circle 528px at 18.23% 30.21%, #151937 0%, #0b0a1d 100%)
+
+.controller-desc--bg-small
+	width 100%
+	height: 503px
+	background-image: linear-gradient(180deg, #0b0a1d 0%, #01030f 100%)
+
+
+.heading-controller
+	h3
+		color: #ffffff
+		font-family: fPSBl
+		font-size: 61px
+		letter-spacing: 0.36px
+		text-transform: uppercase
+		@media screen and (max-width: 640px)
+			font-size 42px
+		span
+			position relative
+			color: #85ff00
+			&:before
+				position absolute
+				left 0
+				bottom -4px
+				content ''
+				width 100%
+				height: 6px
+				background-color: #85ff00
+
+.controller-hover
+	padding-top 54px
+	padding-left 100px
+	padding-bottom 160px
+	@media screen and (max-width: 940px)
+		padding-left 0
+		text-align center
+	@media screen and (max-width: 640px)
+		padding-bottom 50px
+	
+	.controller-hover--img
+		position relative
+		display inline-block
+		
+		img
+			@media screen and (max-width: 940px)
+				max-width 100%
+		
+		.dot-hover
+			position absolute
+			width: 32px
+			height: 32px
+			border: 10px solid rgba(133, 255, 0, 0.55)
+			background-color: #85ff00
+			brr(50%)
+			box-shadow 0 0 0 5px rgba(133,255,0,.55)
+			@media screen and (max-width: 854px)
+				display none
+			&.dexi-disk
+				top 44px
+				left 0
+			&.analog
+				left 220px
+				top -2px
+			&.analog-add
+				top 145px
+				left 137px
+			&.click-stics
+				top 160px
+				right 145px
+			&.sst
+				top -22px
+				right 65px
+			&.grip-force
+				right -12px
+				top 202px
+
+.controller-desc--items
+	display flex
+	flex-direction row
+	justify-content space-between
+	@media screen and (max-width: 768px)
+		flex-direction column
+		align-items flex-start
+
+.controller-desc--items:not(:last-child)
+	margin-bottom 100px
+	@media screen and (max-width: 768px)
+		margin-bottom 72px
+
+.controller-desc--items:nth-child(even)
+	flex-direction row-reverse
+	@media screen and (max-width: 768px)
+		flex-direction column
+	
+	.controller-desc--img
+		margin-right 0
+		margin-left 120px
+		@media screen and (max-width: 940px)
+			margin-left 40px
+		@media screen and (max-width: 768px)
+			margin-left 0
+		img
+			@media screen and (max-width: 940px)
+				// max-width 80%
+
+.controller-desc--img
+	position relative
+	margin-right 120px
+	@media screen and (max-width: 940px)
+		margin-right 40px
+	@media screen and (max-width: 768px)
+		margin-right 0
+		margin-bottom 26px
+	@media screen and (max-width: 360px)
+		width 100%
+	.img-center--width
+		width 378px
+		min-width 378px
+		height 378px
+		z-index 10
+		@media screen and (max-width: 768px)
+			width 300px
+			min-width 300px
+			height 300px
+		@media screen and (max-width: 360px)
+			width 100%
+			min-width 100%
+			height 100%
+		
+		img
+			@media screen and (max-width: 360px)
+				position static
+				tt(0,0)
+	
+	&.triangle-icon
+		&:before
+			position absolute
+			content ''
+			width: 320px
+			height: 320px
+			background-image: url(../img/icon/Triangle-desc.svg)
+			@media screen and (max-width: 768px)
+				display none
+		&.triangle-icon--lb
+			&:before
+				left -160px
+				bottom -130px
+		&.triangle-icon--tr
+			&:before
+				right -143px
+				top -126px
+	
+	&.circle-icon
+		&:before
+			position absolute
+			content ''
+			width: 117px
+			height: 117px
+			box-shadow: 0 2px 74px rgba(245, 166, 35, 0.35)
+			border: 5px solid #f5a623
+			brr(50%)
+			@media screen and (max-width: 768px)
+				display none
+		&:after
+			position absolute
+			content ''
+			width: 117px
+			height: 117px
+			background: rgba(245, 166, 35, 0.1)
+			brr(50%)
+			border: 5px solid transparent
+			@media screen and (max-width: 768px)
+				display none
+		&.circle-icon--rt
+			&:before,
+			&:after
+				top -48px
+				right -38px
+		&.circle-icon--lt
+			&:before,
+			&:after
+				top -48px
+				left -38px
+		&.circle-icon--lb
+			&:before,
+			&:after
+				bottom -48px
+				left -38px
+		&.circle-icon--rb
+			&:before,
+			&:after
+				bottom -48px
+				right -38px
+
+.controller-desc--content
+	display flex
+	flex-direction column
+	justify-content center
+	h3
+		color: #ffffff
+		font-family: fPSB
+		font-size: 32px
+		@media screen and (max-width: 600px)
+			font-size 24px
+	p
+		color: #73778d
+		font-family: fPSL
+		font-size: 18px
+		line-height: 30px
+		margin-top 26px
+		@media screen and (max-width: 600px)
+			color #c1c3df
+			font-size 17px
+			letter-spacing: 0.1px
+			line-height: 26px
+			margin-top 18px
+	
+	a
+		font-family: fPSL
+		font-size: 18px
+		line-height: 30px
+		margin-top 26px
+		color: #06e901

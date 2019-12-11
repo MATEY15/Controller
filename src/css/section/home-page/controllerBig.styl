@@ -10,6 +10,16 @@
 .controllerBig-wrapper
 	position relative
 	overflow hidden
+	display flex
+	justify-content center
+	text-align center
+	img
+		@media screen and (max-width: 991px)
+			max-width 115%
+		@media screen and (max-width: 600px)
+			max-width 130%
+		@media screen and (max-width: 480px)
+			max-width 160%
 	.container
 		position relative
 		text-align center
@@ -91,7 +101,7 @@
 				left 100px
 
 .controllerBig--content
-	max-width 870px
+	position relative
 	margin -40px auto 0
 	color #fff
 	text-align center
@@ -114,11 +124,13 @@
 			font-size 28px
 	
 	p
+		max-width 870px
 		font-family: fPSL
 		font-size: 18px
 		line-height: 1.67
 		text-align: center
 		color: #ffffff
+		margin 0 auto
 		@media screen and (max-width: 600px)
 			color: #c1c3df
 			font-family: fPSL

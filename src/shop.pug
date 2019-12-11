@@ -1,0 +1,122 @@
+extends layout.pug
+
+block variabl
+	- var title = "Shop"
+	- var pagecurent = "shop"
+	- var showreturn = false
+	- var showPost = false
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.shop-view
+			.shop-filter
+				.container
+					.shop-filter--list
+						p.name-list Styles:
+						ul
+							li
+								a(href="#") All
+							li
+								a(href="#")
+									.champ-dot--icon.bg-dot--pink
+									| Chrome 
+							li
+								a(href="#")
+									.champ-dot--icon.bg-dot--rainbow
+									| Coloured
+							li
+								a(href="#")
+									.champ-dot--icon.bg-dot--pattern
+									| Pattern
+							li
+								a(href="#")
+									.champ-dot--icon.bg-dot--ellite
+									| Elite #[span Pro Series]
+
+			.shop-main
+				.container
+					.shop-wrapper
+						.shop-heading
+							h3
+								.champ-dot-big--icon.bg-dot--pink
+								| Chorme Magic Controllers
+							p Our coloured PS4 controllers are popular amongst our customers who want a sleek, smart #[br] controller with an element of a classic PS4 controller look.
+						.shop-wrap
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+
+					.shop-wrapper.pt-15
+						.shop-heading
+							h3
+								.champ-dot-big--icon.bg-dot--rainbow
+								| Coloured PS4 Controllers
+							p A slight twist to the original ps4 controller. Popular amongst customers who want a sleek, smart controller with an element of a #[br] classic. Matte controllers have a smooth and luxurious feel while shiny controllers have a premium  quality, glossy finish
+						.shop-wrap
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+							.shop-col
+								a(href="#").shop-items
+									.shop-items--img
+										img(src="img/product/controller-product.png", alt="")
+									.shop-items--info
+										p.name-prod Ultra Dominator
+										span.price £63.00
+
+block footer
+	include include/footer

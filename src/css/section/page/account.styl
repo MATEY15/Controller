@@ -1,0 +1,273 @@
+.section-account
+	padding-top 64px
+	padding-bottom 100px
+	overflow hidden
+	@media screen and (max-width: 600px)
+		padding-top 24px
+		padding-bottom 20px
+	.bg-triangle
+		@media screen and (max-width: 640px)
+			display block
+		img
+			@media screen and (max-width: 640px)
+				left calc(100% - 165px)
+				top -170px
+
+.points-account
+	margin-top 20px
+	margin-bottom 56px
+	@media screen and (max-width: 600px)
+		margin-top 0
+	.points-name
+		color: #ffffff
+		font-family: fAND
+		font-size: 12px
+		text-transform: uppercase
+		font-weight normal
+		margin-bottom 6px
+	.points-price
+		color: #26d13d
+		font-family: fANB
+		font-size: 37px
+
+.tab-pane
+	.pane
+		display none
+
+.tab-list
+
+	li
+		position relative
+		display inline-block
+		color: #ffffff
+		font-family: fPSB
+		font-size: 14px
+		cursor pointer
+		margin-bottom 36px
+		&:not(:last-child)
+			margin-right 34px
+		&.active,
+		&:hover
+			&:before
+				opacity 1
+				visibility visible
+		&:before
+			position absolute
+			bottom -7px
+			left 0
+			content ''
+			display block
+			width 100%
+			height 3px
+			background: #26d13d
+			trn(.2s)
+			opacity 0
+			visibility hidden
+
+
+.order-table
+	border-radius: 6px
+	border: 1px solid #10132c
+	background-color: #0b0d1f
+	color #fff
+	padding 0 34px
+	min-height 365px
+	@media screen and (max-width: 720px)
+		padding 0 20px
+	
+	table
+		width 100%
+		color: #ffffff
+		font-family: fPSB
+		font-size: 16px
+		border-collapse: collapse
+		@media screen and (max-width: 720px)
+			display block
+			line-height 24px
+		.button-table
+			@media screen and (max-width: 720px)
+				background: #26d13d
+		a
+			color #26d13d
+		tr
+			@media screen and (max-width: 720px)
+				display block
+				width 100%
+				padding 20px 0
+			&:not(:last-child)
+				border-bottom 1px solid rgba(216, 216, 216, 0.1)
+		th
+			text-align: left
+			border-bottom 1px solid #24263f
+			height 62px
+			font-weight normal
+			@media screen and (max-width: 720px)
+				height: auto
+				border-bottom 1px solid transparent !important
+		tbody
+			@media screen and (max-width: 720px)
+				display block
+			th
+				border-bottom 1px solid #18192a
+				@media screen and (max-width: 720px)
+					display block
+		thead
+			@media screen and (max-width: 720px)
+				display none
+			th
+				font-family: fPSR
+				font-size: 14px
+
+.form-col-button
+	padding-top 12px
+
+.account-seting
+	max-width 690px
+
+
+
+.points-one
+	min-height: 283px
+	border-radius: 6px
+	border: 1px solid #10132c
+	background-color: #0b0d1f
+
+.points-one--wrap
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	padding 50px 0 55px
+	@media screen and (max-width: 540px)
+		padding 0 20px
+
+.points-one--items
+	width calc(100% / 4)
+	padding 10px 40px 40px
+	color #fff
+	@media screen and (max-width: 1080px)
+		padding 10px 20px 30px
+	@media screen and (max-width: 940px)
+		width calc(100% / 3)
+	@media screen and (max-width: 768px)
+		width calc(100% / 2)
+	@media screen and (max-width: 540px)
+		width 100%
+		padding 42px 0px 48px
+	&:not(:first-child)
+		border-left 1px solid rgba(216, 216, 216, 0.1)
+		@media screen and (max-width: 940px)
+			border-left 0
+	&:not(:last-child)
+		@media screen and (max-width: 540px)
+			border-bottom 1px solid rgba(216, 216, 216, 0.1)
+	
+	.social-link
+		padding-top 10px
+	
+	h4
+		font-family: fPSB
+		font-size: 19px
+		margin-bottom 9px
+	
+	span
+		display block
+		font-family: fPSR
+		font-size: 14px
+		margin-bottom 2px
+	
+	.price-point
+		color: #26d13d
+		font-family: fPSB
+		font-size: 19px
+		margin-bottom 20px
+
+.points-two
+	padding-top 27px
+	
+	.button
+		margin-top 32px
+
+.points-two--wrap
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin 0 -7px
+
+.points-col
+	width calc(100% / 4)
+	padding 0 7px
+	@media screen and (max-width: 940px)
+		width calc(100% / 2)
+	@media screen and (max-width: 540px)
+		width 100%
+
+.points-two--items
+	position relative
+	min-height 250px
+	border-radius: 6px
+	border: 1px solid #10132c
+	background-color: #0e1124
+	color #fff
+	text-align center
+	max-width 260px
+	margin 0 auto
+	@media screen and (max-width: 940px)
+		margin-bottom 40px
+	
+	.checked-status
+		position relative
+		width: 39px
+		height: 39px
+		border-radius: 6px
+		border: 2px solid #363a56
+		background-color: #0a0c1b
+		margin -15px auto 41px
+		trn(.2s)
+		&:before
+			position absolute
+			top 50%
+			left 50%
+			content ''
+			width 24px
+			height 20px
+			background-image: url(../img/icon/big_check_icon.svg)
+			background-repeat no-repeat
+			tt(-50%, -50%)
+			trn(.2s)
+			opacity 0
+			visibility hidden
+		&.is-active
+			border: 2px solid #26d13d
+			background-color: #26d13d
+			&:before
+				opacity 1
+				visibility visible
+			
+
+	h4
+		font-family: fPSB
+		font-size: 22px
+		margin-bottom 4px
+	
+	span
+		display block
+		font-family: fPSR
+		font-size: 16px
+	
+	.price-point
+		color: #26d13d
+		font-family: fPSB
+		font-size: 19px
+		margin-top 10px
+	
+.done
+	display flex
+	flex-direction row
+	align-items center
+	margin-top 32px
+	color: #ffffff
+	font-family: fPSBl
+	font-size: 21px
+	svg
+		fill #26d13d
+		margin-right 14px

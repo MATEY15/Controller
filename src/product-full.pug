@@ -1,0 +1,452 @@
+extends layout.pug
+
+block variabl
+	- var title = "My account"
+	- var pagecurent = "account"
+	- var showreturn = true
+	- var showPost = true
+	- var showArticle = false
+	- var containerSmall = true
+	- var cart = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-product
+
+			.controller-desc--bg
+				.controller-desc--bg-big
+				.controller-desc--bg-small
+
+			.product-main
+				.container
+					.product-view
+						.product-img
+							img(src="img/product/controler_big.png", alt="")
+						.product-information
+							.product-info--head
+								h2 Avenger Pro
+								p.product-price £63.00
+								.counter-product
+									.qty-input
+										i.less
+										input(type="text" value="3")
+										i.more
+
+									button.button.by-now BUY NOW
+
+								.dispatch-wrapper
+									.dispatch-items
+										p Build time: #[span.deliveri-day 2d]
+										span.icon-info i
+
+									.dispatch-items
+										label.dispatch-checkbox
+											input(type="checkbox")
+											p.dispatch-text Priority Dispatch ( 48h ) #[span +$25]
+
+							.product-tab--wrap
+								.tab-container.tab-controller
+									ul.tab-link.tab-controller--list
+										li
+											img(src="img/icon/controller/icon-controller1.svg", alt="")
+										li
+											img(src="img/icon/controller/icon-controller2.svg", alt="")
+										li
+											img(src="img/icon/controller/icon-controller4.svg", alt="")
+										li
+											img(src="img/icon/controller/icon-controller6.svg", alt="")
+										li
+											img(src="img/icon/controller/icon-controller3.svg", alt="")
+										li
+											img(src="img/icon/controller/star-black.svg", alt="")
+
+									.tab-hidde.tab-controller--hide
+										.pane
+											.pane-ofset
+												h3 Click Sticks #[span.icon-info i]
+												.product-checked
+													label.radio-color.no-checked
+														input(type="radio" name="radio" checked)
+														p.radio-color--text
+															span.radio-view
+															| No Click Stick
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#1E1D1D").radio-view
+															| Black
+															span.price-radio +$25
+
+											.product-option--items
+												label.dispatch-checkbox.checkbox-option
+													input(type="checkbox")
+													p.dispatch-text Priority Dispatch ( 48h ) &nbsp; #[span +$25] #[span.icon-info.icon-info--big i]
+
+												.product-option--wrap.disable-block
+													.product-option--fifty
+														label.name-select Left ( L1, L2 side )
+														.custom-select
+															select
+																option(value="0") X
+																option(value="1") Y
+																option(value="2") Z
+													.product-option--fifty
+														label.name-select Right ( R1, R2 side )
+														.custom-select
+															select
+																option(value="0") Circle
+																option(value="1") Triangle
+																option(value="2") Triangle 2
+																option(value="2") Triangle 3
+
+										.pane
+											.pane-ofset
+												h3 I.A.S. #[span.icon-info i]
+												.product-checked
+													label.radio-color.no-checked
+														input(type="radio" name="radio" checked)
+														p.radio-color--text
+															span.radio-view
+															| No I.A.S.
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#1E1D1D").radio-view
+															| Black
+															span.price-radio +$25
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#BEBEBE").radio-view
+															| White
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#f34444").radio-view
+															| Red
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#2784F2").radio-view
+															| Blue
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#71db6d").radio-view
+															| Green
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#eedd48").radio-view
+															| Yellow
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#f5a623").radio-view
+															| Oraange
+
+										.pane
+											.pane-ofset
+												h3 SST #[span.icon-info i]
+												.product-checked
+													label.radio-color.no-checked
+														input(type="radio" name="radio" checked)
+														p.radio-color--text
+															span.radio-view
+															| No SST
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#1E1D1D").radio-view
+															| Black
+															span.price-radio +$25
+										.pane
+											.pane-ofset
+												h3 Magic Grip #[span.icon-info i]
+												.product-checked
+													label.radio-color.no-checked
+														input(type="radio" name="radio" checked)
+														p.radio-color--text
+															span.radio-view
+															| No Magic Grip
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#1E1D1D").radio-view
+															| Black
+															span.price-radio +$25
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#BEBEBE").radio-view
+															| White
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#f34444").radio-view
+															| Red
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#2784F2").radio-view
+															| Blue
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#71db6d").radio-view
+															| Green
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#eedd48").radio-view
+															| Yellow
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#f5a623").radio-view
+															| Oraange
+										.pane
+											.pane-ofset
+												h3 Dexi Disk #[span.icon-info i]
+												.product-checked
+													label.radio-color.no-checked
+														input(type="radio" name="radio" checked)
+														p.radio-color--text
+															span.radio-view
+															| No Dexi Disk
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#1E1D1D").radio-view
+															| Black
+															span.price-radio +$25
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#BEBEBE").radio-view
+															| White
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#2784F2").radio-view
+															| Blue
+										.pane
+											.product-option--top
+												.extra-checked
+													label.dispatch-checkbox.checkbox-option
+														input(type="checkbox" checked)
+														p.dispatch-text Remove Vibration &nbsp; #[span +$25] #[span.icon-info.icon-info--big i]
+												.extra-checked
+													label.dispatch-checkbox.checkbox-option
+														input(type="checkbox" checked)
+														p.dispatch-text Extended Warranty &nbsp; #[span +$25] #[span.icon-info.icon-info--big i]
+														p.dispatch--black-text Description about Warranty
+											.pane-ofset
+												h3 Analogue Grips
+												.product-checked
+													label.radio-color.no-checked
+														input(type="radio" name="radio" checked)
+														p.radio-color--text
+															span.radio-view
+															| No Magic Grip
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#1E1D1D").radio-view
+															| Black
+															span.price-radio +$25
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#BEBEBE").radio-view
+															| White
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#f34444").radio-view
+															| Red
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#2784F2").radio-view
+															| Blue
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#71db6d").radio-view
+															| Green
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#eedd48").radio-view
+															| Yellow
+													label.radio-color
+														input(type="radio" name="radio")
+														p.radio-color--text
+															span(data-color="#f5a623").radio-view
+															| Oraange
+
+			.product-description
+
+				.container-980
+					.tab-container
+						.tab-heading--desc
+							ul.tab-link.tab-link--desc
+								li  Reviews #[span (6)]
+								li Item Description
+							a(href="#").button.button-review + Write Review
+						.tab-hidde.tab-hide--desc
+							.pane
+								.comment-wrap
+									.comment-items
+										.comment-items--main
+											.comment-items--img.img-center--width
+												img(src="img/comment/comment1.jpg", alt="")
+											.comment-items--text
+												h4.name-comment
+													| Verna Hicks rated it
+													.rating-gefault
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star.is-active
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+												p.game-comment Game : #[span Call of Duty Modern Warefare 2]
+												p.text-comment Love this controller - it’s awesome !
+										.comment-items--date
+											span Mar 23, 2017
+									.comment-items
+										.comment-items--main
+											.comment-items--img.img-center--width
+												img(src="img/comment/comment2.jpg", alt="")
+											.comment-items--text
+												h4.name-comment
+													| Verna Hicks rated it
+													.rating-gefault
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star.is-active
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+												p.game-comment Game : #[span Call of Duty Modern Warefare 2]
+												p.text-comment Love this controller - it’s awesome !
+										.comment-items--date
+											span Mar 23, 2017
+									.comment-items
+										.comment-items--main
+											.comment-items--img.img-center--width
+												img(src="img/comment/comment3.jpg", alt="")
+											.comment-items--text
+												h4.name-comment
+													| Verna Hicks rated it
+													.rating-gefault
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+												p.game-comment Game : #[span Call of Duty Modern Warefare 2]
+												p.text-comment Love this controller - it’s awesome !
+										.comment-items--date
+											span Mar 23, 2017
+
+									.sub--comment-items
+										.sub--comment--img.img-center--width
+											img(src="img/comment/comment-default.jpg", alt="")
+										.sub--comment--text
+											h4 Glad to hear that !
+											p The Controller People
+
+							.pane
+								p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Donec id elit non mi porta gravida at eget metus.
+								ul.list-descript
+									li Stats : #[span 120gr]
+									li Stats : #[span 30cm]
+									li Stats : #[span 15cm]
+									li Stats : #[span 15cm]
+								h3 Warranty
+								p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Praesent commodo cursus magna,
+
+			.customization-wrapper
+				.container-980
+					.customization-heading
+						h3 Customization
+						a(href="#").button.button-send See DYI Parts
+					.controller-desc--wrapper
+						.controller-desc--items
+							.controller-desc--img
+								.img-center--width
+									img(src="img/desc-img1.jpg", alt="")
+							.controller-desc--content
+								h3 Dexi Disk
+								p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+
+						.controller-desc--items
+							.controller-desc--img.triangle-icon.triangle-icon--lb
+								.img-center--width
+									img(src="img/desc-img2.jpg", alt="")
+							.controller-desc--content
+								h3 Interchangeable Analog
+								p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis,
+
+						.controller-desc--items
+							.controller-desc--img
+								.img-center--width
+									img(src="img/desc-img3.jpg", alt="")
+							.controller-desc--content
+								h3 Click Stics
+								p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. #[a(href="#") Vivamus massa] lacinia nec mauris quis, cursus ornare ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+						.controller-desc--items
+							.controller-desc--img.circle-icon.circle-icon--rt
+								.img-center--width
+									img(src="img/desc-img4.jpg", alt="")
+							.controller-desc--content
+								h3 SST’s
+								p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante.
+
+						.controller-desc--items
+							.controller-desc--img.triangle-icon.triangle-icon--tr
+								.img-center--width
+									img(src="img/desc-img5.jpg", alt="")
+							.controller-desc--content
+								h3 Grip Force
+								p Vivamus eget purus varius, porta diam id, facilisis dolor. Proin blandit, sem ac elementum suscipit, tellus tellus tristique metus, ut auctor nisl mi ac mi. Vivamus massa est, lacinia nec mauris quis, cursus ornare ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+
+
+block footer
+	include include/footer

@@ -1,0 +1,103 @@
+extends layout.pug
+
+block variabl
+	- var title = "Checkout"
+	- var pagecurent = "checkout"
+	- var showreturn = false
+	- var showPost = false
+	- var showArticle = false
+	- var containerSmall = true
+	- var cart = false
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.checkout-section
+			
+			.checkout-heading
+				.container-small
+					ul.heading-load
+						li
+							a(href="#").is-ckecked
+								span.icon-check
+								| CART
+						li
+							a(href="#").is-active
+								span.icon-check
+								| SHIPPING
+						li
+							a(href="#")
+								span.icon-check
+								| PAYMENT
+
+			.container-small
+				.checkout-main.step-two
+					.checkout-col
+						.checkout-items
+							h3 Delivery Info
+							form
+								.form-items--black
+									label EMAIL
+									input(type="text" value="mynada.mail@gmail.com")
+								.form-items--wrap
+									.col-fifty
+										.form-items--black
+											label FIRST NAME
+											input(type="text")
+									.col-fifty
+										.form-items--black
+											label LAST NAME
+											input(type="text")
+								.form-items--black
+									label COMPNAY NAME
+									input(type="text")
+								.form-items--black
+									label STREET ADDRESS
+									input(type="text")
+								.form-items--black
+									label STREET ADDRESS 2
+									input(type="text")
+								.form-items--black
+									label CITY
+									input(type="text")
+								.form-items--black
+									label COUNTRY
+									input(type="text")
+								.form-items--black
+									label PHONE
+									input(type="text")
+
+					.checkout-col
+						.checkout-items
+							.form-items--black
+								h3 Shipping
+								p Duis ornare diam eget augue ornare pulvinar. Duis finibus sapien vitae dapibus posuere.
+
+							form
+								label.check-checkout
+									input( type="radio" name="radio" checked)
+									.check-checkout--text
+										.check-checkout--name
+											span.icon-checkout
+											p Standard Shipping
+										.check-checkout--price
+											span + £10.00
+
+								label.check-checkout
+									input( type="radio" name="radio")
+									.check-checkout--text
+										.check-checkout--name
+											span.icon-checkout
+											p Priority Shipping 
+											span (DPD, UPS, PARCELFORCE)
+										.check-checkout--price
+											span + £20.00
+
+								button.button.button-checkout CONTINUE
+
+
+block footer
+	include include/footer

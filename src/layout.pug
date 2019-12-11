@@ -46,8 +46,127 @@ html(lang="en")
 		block footer
 
 		.hidden
-			.popup-mail.zoom-anim-dialog#popup-mail
-				p 111
+
+			.popup-default.zoom-anim-dialog#login-popup
+				.popup-default--heading
+					h3 Login
+					.height-50
+				form
+					.form-items
+						label EMAIL
+						input(type="text" value="mynada.mail@gmail.com")
+					.form-items
+						label PASSWORD
+						input(type="text")
+						a(href="#").link-popup FORGOT PASSWORD ?
+					.form-items
+						button.button.button-popup Create Account
+
+			.popup-default.zoom-anim-dialog#refer-popup
+				.popup-default--heading
+					h3 Refer to friends
+					.height-50
+				form
+					.form-items
+						label Enter friends email
+						input(type="text" value="mynada.mail@gmail.com")
+					.form-items
+						button.button.button-popup SEND
+
+			.popup-default.bg-dark.zoom-anim-dialog#comment-popup
+				.popup-default--heading
+					h3 Your Comment
+				form
+					.form-items
+						label YOUR NAME
+						input(type="text" value="Danny Brown")
+					.form-items
+						label GAME YOU PLAY
+						input(type="text")
+					.form-items
+						label COMMENT
+						textarea
+					.form-items.form-items--star
+						label HOW WOULD YOU RATE CONTROLLER:
+						.rating-gefault.rating-big
+							span.rating-star
+								+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+								+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+							span.rating-star
+								+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+								+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+							span.rating-star
+								+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+								+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+							span.rating-star.is-active
+								+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+								+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+							span.rating-star
+								+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+								+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+
+					.form-items
+						button.button.button-popup SEND
+
+			.popup-green.zoom-anim-dialog#signup-popup
+				.popup-default--heading
+					h3 Refer to friends
+					.height-50
+				form
+					.form-items
+						label EMAIL
+						input(type="text" value="mynada.mail@gmail.com")
+					.form-items--wrap
+						.col-fifty
+							.form-items
+								label FIRST NAME
+								input(type="text")
+						.col-fifty
+							.form-items
+								label LAST NAME
+								input(type="text")
+
+					.form-items
+						label PASSWORD
+						input(type="text")
+
+					.form-items
+						label REPEAT PASSWORD
+						input(type="text")
+
+					.form-items
+						button.button.button-popup Create Account
+
+			.popup-green.popup-thanks.zoom-anim-dialog#thanks-popup
+				.heading-thanks
+					img(src="img/star-thanks.png", alt="")
+					h3 Thanks
+					span Create account to
+				
+				.wrapp-checked
+					.item-checked
+						.item-checked--img
+							+iconSvg('24', '20', '0 0 24 20', 'icon-checked')
+						.item-checked--text
+							h4 Track Order
+							p Receive updates
+					.item-checked
+						.item-checked--img
+							+iconSvg('24', '20', '0 0 24 20', 'icon-checked')
+						.item-checked--text
+							h4 Earn Rewards
+							p points make something
+					.item-checked
+						.item-checked--img
+							+iconSvg('24', '20', '0 0 24 20', 'icon-checked')
+						.item-checked--text
+							h4 Collect #[span 30 Points]
+							p and use for future purchases 
+
+					.form-items
+						button.button.button-popup Create Account
+						a(href="#").no-thanks No, Thanks
+
 
 
 		block scripts

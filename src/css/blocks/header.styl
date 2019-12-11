@@ -2,12 +2,14 @@ headerHeight = 85px // variable
 
 .header
 	position relative
-	min-height 907px
 	background: #050714
 	background-repeat no-repeat
 	background-position: center bottom
+	position relative
+	z-index 100
 
 .header-home
+	min-height 907px
 	@media screen and (max-width: 1200px)
 		min-height 840px
 	@media screen and (max-width: 720px)
@@ -102,15 +104,103 @@ headerHeight = 85px // variable
 		display flex
 		flex-direction row
 		li
+			padding 18px 14px 18px 18px
 			&:not(:first-child)
-				margin-left 40px
+				// margin-left 40px
 			&.user-list
 				@media screen and (max-width: 854px)
 					display none
 			a
 				text-decoration none
 
-.burger-menu
+.card-view
+	position relative
+	trn(.2s)
+	&:hover
+		background: #1d1a3d
+		.hidden-cart
+			top 100%
+			opacity 1
+			visibility visible
+		.icon-cart
+			fill #8EFF13
+	.count-cart
+		position relative
+		top -14px
+		left 2px
+		color: #000000
+		font-family: fPSB
+		font-size: 12px
+		border-radius: 7px
+		background-color: #8eff13
+		padding 0 7px
+	.icon-cart
+		fill #ccc
+		trn(.15s)
+
+.hidden-cart
+	position absolute
+	top calc(100% + 30px)
+	right 0
+	min-width 326px
+	background-color: #0e1025
+	trn(.15s)
+	opacity 0
+	visibility hidden
+	z-index 10
+
+.cart-head--button
+	margin-top 26px
+
+.button-cart
+	position relative
+	width 100%
+	text-align center
+	background-color: #8eff13
+	padding 13px
+	color: #000000
+	font-family: fPSBl
+	font-size: 14px
+	letter-spacing: 0.3px
+	text-transform: uppercase
+	.icon-arrow-next
+		position absolute
+		right 13px
+		top 50%
+		tt(0, -50%)
+		fill #000
+
+.cart-head--items
+	display flex
+	flex-direction row
+	align-items center
+	margin 20px 22px 14px
+	.cart-head--items-img
+		width 61px
+		min-width 61px
+		height 61px
+		display flex
+		flex-direction row
+		align-items center
+		justify-content center
+		background: #fff
+		margin-right 18px
+
+.cart-head--items-text
+	h4
+		color: #ffffff
+		font-family: fAND
+		font-size: 17px
+		line-height: 24px
+	.cart-head--price
+		color: #8eff13
+		font-family: fANM
+		font-size: 14px
+		line-height: 24px
+
+
+
+.burger-default
 	width 20px
 	margin-left 35px
 	cursor pointer

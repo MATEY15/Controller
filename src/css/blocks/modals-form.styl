@@ -2,106 +2,220 @@
 	display none
 
 .mfp-close-btn-in .mfp-close
-	color: #f3495e
+	position absolute
+	top 20px
+	right 22px
+	color: #8c8c8c
 	opacity: 1
-	font-size 36px
+	font-size 24px
+	@media screen and (max-width: 480px)
+		right 0
+		top 5px
 
 .mfp-bg
-	background #1a1a1a !important
-	opacity .5
+	background-color: rgba(3, 7, 21, 0.65) !important
 
-.formValidate
-	span.error
-		position absolute
-		font-size 14px
-		right 0
-		bottom 5px
-		color #19bfbb
-
-.main-form.popup-text
-	max-width: 800px
-	.main-form__text
-		position relative
-		p
-			font-family GothamPro
-			font-size 1rem
-			line-height 1.6rem
-			color #dfdfdf
-			
-.main-form
-	box-sizing border-box
+.popup-green
 	position relative
-	max-width 520px
+	max-width 524px
+	width 100%
+	min-height 475px
 	margin 40px auto
-	background cWhite
-	color #fff
-	padding 40px 38px 38px
-	border-radius 4px
-	box-shadow 0 0 30px 1px #333
+	padding 68px 72px 85px
+	background-image: linear-gradient(49deg, #0c2d22 0%, #050714 100%)
 	@media screen and (max-width: 480px)
-		margin 20px 10px
-		padding-left 22px
-		padding-right 22px
-	.heading-h2
-		margin-bottom 26px
-	.main-form__submit
+		top 0
+		left 0
+		margin 0
+		width 100%
+		max-width 100%
+		height 100%
+		padding 68px 20px 85px
+		background-image: linear-gradient(49deg, #0c2d22 0%, #050714 100%)
+	
+	&:before
+		position absolute
+		top 0
+		left 0
+		content ''
+		display block
+		width 100%
+		height 100%
+		background-image: url(../img/popup_shape.png)
+		background-repeat no-repeat
+		background-position: right top
+		@media screen and (max-width: 480px)
+			display none
+	
+	.form-items--wrap
+		.form-items
+			margin-bottom 18px
+	
+	.button-popup
+		margin-top 16px
+	
+	*
 		position relative
-		.main-form_label
-			font-family: fPoppinsSemiBold
-			font-size: 12px
-			color: #000
-			text-transform uppercase
-			display block
-			margin-bottom 11px
-		.main-form_input
-			width 100%
-			font-size: 12px
-			font-family: fPoppinsSemiBold
-			line-height: 48px
-			letter-spacing: 0
-			padding 0 15px
-			color: #000
-			height 48px
-			border: 1px solid #979797
-			border-radius 4px
-		textarea
-			min-height 100px
-	.main-form_items-input
-		position relative
-		margin-bottom 18px
-	.main-form_items-button
-		text-align center
-		button
-			width 100%
-	.wraps-date
-		display flex
-		flex-direction row
-		justify-content space-between
-		.items-input--date
-			width 60%
-		.items-input--time
-			width 40%
-			display flex
-			align-items flex-end
+	
+	.button-checkout
+		margin-top 8px
 
-#go_popup
-	.one_go_popup
+.mfp-container
+	@media screen and (max-width: 480px)
+		padding-left 0
+		padding-right 0
+
+.popup-default
+	position relative
+	max-width 524px
+	width 100%
+	min-height 475px
+	margin 40px auto
+	padding 68px 72px 85px
+	box-shadow 0 42px 54px rgba(0, 0, 0, 0.24)
+	border 1px solid rgba(151, 151, 151, 0.05)
+	background-image linear-gradient(49deg, #13103e 0%, #060815 100%)
+	@media screen and (max-width: 480px)
+		top 0
+		left 0
+		margin 0
+		width 100%
+		max-width 100%
+		height 100%
+		padding 68px 20px 85px
+		background-image: linear-gradient(49deg, #0c2d22 0%, #050714 100%)
+	
+	&:before
+		position absolute
+		top 0
+		left 0
+		content ''
+		display block
+		width 100%
+		height 100%
+		background-image: url(../img/popup_shape.png)
+		background-repeat no-repeat
+		background-position: right top
+		@media screen and (max-width: 480px)
+			display none
+	
+	*
 		position relative
+	
+	.button-checkout
+		margin-top 8px
+	&.bg-dark
+		box-shadow 0 42px 54px rgba(0, 0, 0, 0.24)
+		border 0
+		background-color #090d21
+
+.popup-default--heading
+	h3
+		color #ffffff
+		font-family fPSBl
+		font-size 35px
+		margin-bottom 20px
+	.height-50
+		height 50px
+		@media screen and (max-width: 480px)
+			height 24px
+
+.form-items--star
+	margin-bottom 42px !important
+
+.link-popup
+	display inline-block
+	color rgba(38, 209, 61, 0.74)
+	font-family fAND
+	font-size 12px
+	font-weight 600
+	text-transform uppercase
+	margin-top 15px
+
+.popup-thanks
+	min-height 630px
+	padding 0 84px
+	margin 60px auto
+	// background-image: linear-gradient(45deg,#0c2d22 0,#050714 80%)
+	// background-image: linear-gradient(49deg, #0c2d22 0%, #050714 100%);
+	background: linear-gradient(220deg,#050714 0,#091e1c 100%)
+	&:before
+		background: url(../img/bg_thanks1.png), url(../img/bg_thanks2.png)
+		background-repeat no-repeat, no-repeat
+		background-position: -1px 126px, right 335px
+
+.heading-thanks
+	position relative
+	display block
+	text-align center
+	top -42px
+	@media screen and (max-width: 480px)
+		top 0
+		margin-bottom 24px
+	img
+		margin-bottom 20px
+	h3
+		color #ffffff
+		font-family fPSBl
+		font-size 35px
+		margin-bottom 8px
+
+	span
+		display block
+		color #ffffff
+		font-family fPSL
+		font-size 18px
+
+.wrapp-checked
+	top -20px
+	@media screen and (max-width: 480px)
+		top 0
+
+.item-checked
+	position relative
+	display flex
+	flex-direction row
+	align-items center
+	padding 14px 20px 10px
+	background-color rgba(216, 216, 216, 0.04)
+	
+	
+	&:not(:last-child)
+		margin-bottom 20px
+	
+	.item-checked--img
+		margin-right 24px
+		.icon-checked
+			fill #26D13D
+	
+	.item-checked--text
+		color #ffffff
+		font-family fPSL
+		font-size 16px
 		h4
-			font-family: BebasNeue
-			font-weight: 600
-			text-transform: uppercase
-			font-size: 2rem
-			letter-spacing: .04em
-			line-height: 2.8rem
-			color #fff
-			text-align center
-			margin-bottom 30px
-		p
-			font-family GothamPro
-			font-size 1rem
-			line-height 1.6rem
-			color #dfdfdf
+			color #ffffff
+			font-family fPSBl
+			font-size 21px
+			margin-bottom 4px
+			span
+				font-family fPSBl
+				font-size 16px
+				color #ffb42b
+
+.popup-green.popup-thanks
+	.button-popup
+		margin-top 10px
+	
+	.mfp-close
+		color #fff
+
+.no-thanks
+	display block
+	text-align center
+	margin-top 20px
+	color rgba(255, 255, 255, 0.66)
+	font-family fPSL
+	font-size 16px
 
 
 .main-form_input::-webkit-input-placeholder {font-family 12px;  color: rgba(0, 0, 0, 0.09);}

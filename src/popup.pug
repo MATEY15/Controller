@@ -1,0 +1,34 @@
+extends layout.pug
+
+block variabl
+	- var title = "My account"
+	- var pagecurent = "account"
+	- var showreturn = false
+	- var showPost = false
+	- var showArticle = false
+	- var containerSmall = false
+	- var cart = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-post
+			.container
+				h3 Popup Link
+				br
+				br
+				a(href="#login-popup").popup #Login
+				br
+				a(href="#signup-popup").popup #SignUp
+				br
+				a(href="#refer-popup").popup #Refer
+				br
+				a(href="#comment-popup").popup #Comment
+				br
+				a(href="#thanks-popup").popup #Thanks
+
+block footer
+	include include/footer

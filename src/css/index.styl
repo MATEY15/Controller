@@ -18,7 +18,7 @@ body
 	position relative
 	overflow-x: hidden
 	min-width 320px
-	background: cWhite
+	background: #080A18
 	font-family: fPSR
 	min-height 100%
 	&.overflow
@@ -47,28 +47,40 @@ body
 .align-left
 	float left
 
+.text-right
+	text-align right
+.text-left
+	text-align: left
+.text-center
+	text-align center
+
 a
 	color cWhite
 	text-decoration none
 
+p
+	color: #ffffff
+	font-family: fPSL
 .text-Bafora
 	font-family: fBD
 
 h1, h2, h3, h4, h5, h6
 	font-family: fPSB
+	color #fff
 
 h1
-	font-size 32px
-h2
-	font-size 28px
-h3
-	font-size 26px
-h4
-	font-size 22px
-h5
-	font-size 18px
-h6
-	font-size 16px
+	font-size 67px
+	line-height 72px
+// h2
+// 	font-size 28px
+// h3
+// 	font-size 26px
+// h4
+// 	font-size 22px
+// h5
+// 	font-size 18px
+// h6
+// 	font-size 16px
 
 .container
 	box-sizing border-box
@@ -87,16 +99,191 @@ h6
 	// @media screen and (max-width: 640px)
 	// 	padding-left 20px
 	// 	padding-right 20px
+
+	&.container-small
+		max-width 1100px
 	
-.heading-h2
-	color cBlack
-	font-family: fPSB
-	font-size 32px
-	text-align center
-	@media screen and (max-width: 640px)
-		font-size 28px
-		br
-			display none
+	&.container-mini
+		max-width 860px
+
+.container-wrapp
+	max-width 1460px
+	width 100%
+	margin 0 auto
+	padding 0 10px
+
+.container-small
+	box-sizing border-box
+	max-width 1100px
+	width 100%
+	padding-left 10px
+	padding-right 10px
+	margin 0 auto
+	@media screen and (max-width: 1200px)
+		padding-left 15px
+		padding-right 15px
+	@media screen and (max-width: 768px)
+		padding-left 20px
+		padding-right 20px
+
+.container-980
+	box-sizing border-box
+	max-width 980px
+	width 100%
+	padding-left 10px
+	padding-right 10px
+	margin 0 auto
+	@media screen and (max-width: 1200px)
+		padding-left 15px
+		padding-right 15px
+	@media screen and (max-width: 768px)
+		padding-left 20px
+		padding-right 20px
+
+.container-mini
+	box-sizing border-box
+	max-width 840px
+	width 100%
+	padding-left 10px
+	padding-right 10px
+	margin 0 auto
+	@media screen and (max-width: 1200px)
+		padding-left 15px
+		padding-right 15px
+	@media screen and (max-width: 768px)
+		padding-left 20px
+		padding-right 20px
+
+.default-heading
+	h1, h2, h3
+		color: #ffffff
+		font-family: fPSB
+		font-size: 51px
+		line-height: 72px
+		@media screen and (max-width: 768px)
+			font-size 32px
+
+// .heading-h2
+// 	color cBlack
+// 	font-family: fPSB
+// 	font-size 32px
+// 	text-align center
+// 	@media screen and (max-width: 640px)
+// 		font-size 28px
+// 		br
+// 			display none
 
 .ml-58
 	margin-left 58px
+
+.height-100
+	height 100px
+
+.height-170
+	height 170px
+
+// Form
+
+.form-items,
+.form-items--black
+	&:not(:last-child)
+		margin-bottom 18px
+	label
+		display block
+		color: #989898
+		font-family: fAND
+		font-size: 12px
+		text-transform: uppercase
+		margin-bottom 8px
+		
+		a, span
+			color: #26d13d
+	
+	input, textarea
+		display block
+		min-height 44px
+		color: #ffffff
+		font-family: fANB
+		font-size: 16px
+		width 100%
+		border: 2px solid rgba(255, 255, 255, 0.15)
+		padding 0 22px
+		background: transparent
+		trn(.15s)
+		&:focus
+			border: 2px solid #26d13d
+	textarea
+		min-height 186px
+		resize none
+		padding 20px
+
+.form-items--black
+	label
+		color: #989898
+	input, textarea
+		color #2c2e30
+		border 2px solid #e5e8eb
+		&:focus
+			border: 2px solid #000
+	p
+		color #788995
+		font-family fANR
+		font-size 16px
+		line-height 26px
+
+// IMG Center
+
+.img-center--width
+	position relative
+	overflow hidden
+	img
+		position absolute
+		width 100%
+		height auto
+		imgC()
+
+.img-center--height
+	position relative
+	overflow hidden
+	img
+		position absolute
+		height 100%
+		width auto
+		imgC()
+
+
+// Social
+
+.social-link
+	ul
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		align-items center
+		li
+			&:not(:last-child)
+				margin-right 26px
+	svg
+		width 20px
+		height 20px
+		fill #63615C
+		trn(.2s)
+		&.icon-github
+			position relative
+			top 2px
+			width 24px
+			height 24px
+		&:hover
+			fill #fff
+
+// BG Triagle
+
+.bg-triangle
+	@media screen and (max-width: 640px)
+		display none
+	.container
+		position relative
+		img
+			position: absolute
+			left: calc(100% - 80px)
+			top: -112px

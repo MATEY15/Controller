@@ -1,0 +1,546 @@
+.checkout-section
+	background: #fff
+	padding-top 42px
+	overflow hidden
+	
+.checkout-heading
+	border-bottom 2px solid #F5F5F5
+	margin-bottom 70px
+	@media screen and (max-width: 480px)
+		display none
+	
+	.icon-check
+		position relative
+		top 3px
+		display none
+
+.checkout-items
+	h3
+		color #1b2125
+		font-family fPSM
+		font-size 24px
+		font-weight 500
+		margin-bottom 30px
+	.count
+		color #4bf262
+	
+	.form-items--wrap
+		margin-bottom 18px
+		@media screen and (max-width: 854px)
+			margin-bottom 0
+		
+		.form-items--black
+			@media screen and (max-width: 854px)
+				margin-bottom 18px
+
+.heading-load
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content center
+	
+	a.is-ckecked
+		color #000
+		.icon-check
+			display inline-block
+	
+	a.is-active
+		color #000
+		&:before
+			opacity 1
+			visibility visible
+
+	li, a
+		position relative
+		color #c1c1c1
+		font-family fPSB
+		font-size 18px
+		text-transform uppercase
+	li
+		&:before
+			position relative
+			top 10px
+			left 100%
+			content ''
+			display block
+			width 85px
+			height 1px
+			background: #F4F4F4
+			@media screen and (max-width: 600px)
+				width 40px
+		
+		&:not(:last-child)
+			margin-right 85px
+			@media screen and (max-width: 600px)
+				margin-right 40px
+		&:last-child
+			&:before
+				display none
+	a
+		display inline-block
+		padding 0 16px
+		padding-bottom 14px
+		min-height 38px
+		&:before
+			position absolute
+			height 2px
+			width 100%
+			bottom -2px
+			left 0
+			content ''
+			display block
+			background: #363636
+			opacity 0
+			visibility hidden
+
+.icon-check
+	width 19px
+	height 19px
+	background: #16cf2f url(../img/icon/checkbox-icon.svg)
+	background-size 12px
+	background-repeat no-repeat
+	background-position: center
+	display inline-block
+	margin-right 7px
+	brr(50%)
+
+
+.checkout-main
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin 0 -50px
+	padding-bottom 105px
+	
+	&.step-one
+		@media screen and (max-width: 854px)
+			margin 0
+			flex-direction column-reverse
+		
+		.checkout-col:last-child
+			@media screen and (max-width: 854px)
+				margin-bottom 85px
+	
+	&.step-two
+		@media screen and (max-width: 854px)
+			margin 0
+		.checkout-col:first-child
+			@media screen and (max-width: 854px)
+				margin-bottom 25px
+	
+	&.step-three
+		@media screen and (max-width: 854px)
+			margin 0
+			
+		.checkout-col:first-child
+			@media screen and (max-width: 854px)
+				margin-bottom 50px
+			
+		
+	
+	.checkout-col
+		width calc(100% / 2)
+		padding 0 50px
+		padding-bottom 20px
+		@media screen and (max-width: 854px)
+			width 100%
+			max-width 500px
+			margin-left auto
+			margin-right auto
+			padding 0
+		
+		&:first-child
+			border-right 1px solid #EDEDED
+			@media screen and (max-width: 854px)
+				border-right 0
+
+form
+	.button-checkout
+		margin-top 18px
+
+.form-items--wrap
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin 0 -8px
+	.col-fifty
+		width 50%
+		padding 0 8px
+		@media screen and (max-width: 854px)
+			width 100%
+
+
+.check-checkout
+	// display flex
+	// flex-direction row
+	// align-items center
+	// margin-bottom: 14px
+	// min-height 70px
+	// border 2px solid #eee7fd
+	// background-color #f8f8f8
+
+	&:last-child
+		margin-bottom: 0
+
+	& input
+		display: none
+		z-index: -1
+		opacity: 0
+
+.check-checkout--price
+	@media screen and (max-width: 350px)
+		padding-left 40px
+	span
+		color #0cd56c
+		font-family fPSR
+		font-size 15px
+
+.check-checkout--text
+	display flex
+	flex-direction row
+	align-items center
+	margin-bottom: 12px
+	min-height 70px
+	border 2px solid #eee7fd
+	background-color #f8f8f8
+	position: relative
+	justify-content space-between
+	width 100%
+	padding-left 25px
+	padding-right 30px
+	align-items center
+	color #1b2125
+	font-family fANR
+	font-size 16px
+	font-weight 600
+	cursor: pointer
+	user-select: none
+	trn(.2s)
+	@media screen and (max-width: 350px)
+		flex-direction column
+		justify-content center
+		align-items flex-start
+
+.check-checkout--name
+	position relative
+	padding-left 40px
+	p
+		color #1b2125
+		font-family fANR
+		font-size 16px
+		font-weight 600
+	span
+		display block
+		color rgba(51, 67, 75, 0.36)
+		font-family fPSB
+		font-size 12px
+		text-transform uppercase
+
+	// &:before
+	// 	content: ''
+	// 	position: absolute
+	// 	top: 0px
+	// 	left: 0
+	// 	width: 16px
+	// 	height: 16px
+	// 	border-radius: 3px
+	// 	border: 1px solid #dddddd
+	// 	background-color: #fff
+	
+	.icon-checkout
+		position absolute
+		top 50%
+		left 0
+		display inline-block
+		width 20px
+		height 20px
+		border 1px solid #e0e0e0
+		background-color #ffffff
+		brr(50%)
+		tt(0, -50%)
+		&:before
+			position absolute
+			top 50%
+			left 50%
+			content ''
+			width 14px
+			height 14px
+			background-color #0cd56c
+			opacity 0
+			visibility hidden
+			brr(50%)
+			tt(-50%, -50%)
+			trn(.2s)
+
+.check-checkout input:checked + .check-checkout--text
+	border 2px solid #4bf262
+	background-color rgba(75, 242, 98, 0.07)
+
+.check-checkout input:checked + .check-checkout--text .icon-checkout
+	border 1px solid #0cd56c
+
+.check-checkout input:checked + .check-checkout--text .icon-checkout:before
+	opacity 1
+	visibility visible
+
+
+// CheckOut 1
+
+.product-checkout--total
+	padding-top 20px
+	border-top 1px solid rgba(216, 216, 216, 0.4)
+	.product-checkout--item
+		&:first-child
+			// color #000
+		&:not(:last-child)
+			padding-bottom 20px
+			margin-bottom 20px
+			border-bottom 1px solid rgba(216, 216, 216, 0.4)
+
+.product-checkout--item
+	position relative
+	display flex
+	flex-direction row
+	&:not(:last-child)
+		margin-bottom 40px
+	.product-checkout--img
+		display inline-block
+		width 120px
+		height 120px
+		background: #fbfbfb
+		margin-right 32px
+		img
+			max-width 80%
+	
+	.product-checkout--text
+		position relative
+		flex-grow 1
+		.name
+			display block
+			color #2c2e30
+			font-family fAND
+			font-size 17px
+			line-height 24px
+			margin-bottom 4px
+		
+		span, p
+			display block
+			color #000000
+			font-family fANM
+			font-size 14px
+			line-height 24px
+		
+		.button-add
+			margin-top 14px
+
+.qty-input.product-checkout--counter
+	height 34px
+	border-radius 1px
+	background-color #f8f8f8
+	width 70px
+	input
+		background: #f8f8f8
+		color #000000
+		font-family fMR
+		font-size 14px
+		font-weight 600
+	i
+		&:before
+			background: #000
+			width 8px
+		&:after
+			background: #000 !important
+			height 8px !important
+
+.delete-product
+	position absolute
+	top 5px
+	right 12px
+	width 12px
+	height 12px
+	display inline-block
+	color #d0021b
+	font-family fAND
+	font-weight 600
+	line-height 24px
+	font-size 0
+	@media screen and (max-width: 600px)
+		position static
+		font-size 17px
+		width: initial
+		height: initial
+	
+	.icon-close2
+		@media screen and (max-width: 600px)
+			display none
+
+.product-sum
+	margin-top 20px
+	.form-items--wrap
+		margin 0
+
+	.col-fifty
+		display flex
+		flex-direction row
+		align-items center
+		padding 20px 0 40px
+		p, span
+			color #2c2e30
+			font-family fAND
+			font-size 17px
+			font-weight 600
+			line-height 24px
+
+.product-sum--item
+	display flex
+	flex-direction row
+	justify-content space-between
+	padding-top 21px
+	padding-bottom 15px
+	border-bottom 1px solid rgba(216, 216, 216, 0.4)
+	&:first-child
+		border-top 1px solid rgba(216, 216, 216, 0.4)
+	
+		
+	p, span
+		color #2c2e30
+		font-family fAND
+		font-size 17px
+		font-weight 600
+		line-height 24px
+	span
+		font-size 15px
+		line-height 24px
+
+.input-sum
+	min-height 45px
+	width 100%
+	border-radius 3px
+	border 2px solid #e5e8eb
+	background-color #ffffff
+	padding 0 18px
+	color #e5e8eb
+	font-family fAND
+	font-size 16px
+	font-weight 600
+	
+	&::-webkit-input-placeholder
+		color: #e5e8eb
+	&::-moz-placeholder
+		color: #e5e8eb
+	&:-ms-input-placeholder
+		color: #e5e8eb
+	&:-moz-placeholder
+		color: #e5e8eb
+
+
+.check-payment--info
+	border 2px solid rgba(225, 229, 227, 0.65)
+	background-color #ffffff
+	padding 35px 28px
+	@media screen and (max-width: 480px)
+		border 0
+		padding 10px 0px
+
+.check-payment
+	&:not(:last-child)
+		.check-payment--info
+			margin-bottom 20px
+	& > input
+		display none
+		opacity 0
+		z-index -100
+
+.payment--heading
+	position relative
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	margin-bottom 13px
+	
+	p
+		padding-left 32px
+		color #1b2125
+		font-family fAND
+		font-size 17px
+		font-weight 600
+	
+	.icon-payment
+		position absolute
+		top 0
+		left 0
+		display block
+		width 20px
+		height 20px
+		border 1px solid #0cd56c
+		background-color #ffffff
+		brr(50%)
+		&:before
+			position absolute
+			top 50%
+			left 50%
+			content ''
+			display block
+			width 15px
+			height 15px
+			background-color #0cd56c
+			tt(-50%, -50%)
+			brr(50%)
+			trn(.2s)
+			opacity 0
+			visibility hidden
+	
+.checkout-descript
+	display block
+	padding-left 32px
+	padding-right 15px
+	color #788995
+	font-family fANR
+	font-size 16px
+	line-height 26px
+
+.check-payment input:checked + .check-payment--info .payment--heading .icon-payment:before
+	opacity 1
+	visibility visible
+
+.check-payment--form
+	margin-top 25px
+	
+	.form-items--black
+		position relative
+	
+	.icon-payment
+		position relative
+		input
+			padding-right 32px
+		
+		.icon--input-right
+			position absolute
+			top 13px
+			right 13px
+
+.form-items--card
+	display flex
+	flex-direction row
+	margin 0 -8px
+	@media screen and (max-width: 480px)
+		flex-wrap wrap
+	
+	.form-items--black
+		padding 0 8px
+		@media screen and (max-width: 480px)
+			width 100%
+	
+	.form-items--small
+		max-width 100px
+		@media screen and (max-width: 1080px)
+			max-width 100%
+		@media screen and (max-width: 480px)
+			width 50%
+		input
+			color #788995
+			font-family fANR
+			font-size 16px
+			text-transform uppercase
+			padding 0 10px

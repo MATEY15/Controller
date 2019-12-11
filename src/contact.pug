@@ -1,0 +1,74 @@
+extends layout.pug
+
+block variabl
+	- var title = "Contact"
+	- var pagecurent = "contact"
+	- var showreturn = false
+	- var showPost = false
+	- var showArticle = false
+	- var containerSmall = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-contact
+
+			.bg-triangle
+				.container
+					img(src="img/blog_shape.svg", alt="")
+
+			.container-small
+				.contact-wrapper
+					.contact-heading
+						h1 Say Hello
+						p We are always at the end of an email. Feel free to get in touch for any reason and we will do out best to help you.
+
+					.contact-form
+						form
+							.form-items
+								label YOUR NAME #[span *]
+								input(type="text")
+							.form-items
+								label YOUR EMAIL #[span *]
+								input(type="text")
+							.form-items
+								label Subject
+								input(type="text")
+							.form-items
+								label Your Message
+								textarea
+							.form--button
+								button.button.button-send Send
+
+					.direct-contact
+						p Direct Email: #[a(href="mailto:hello@thecontrollerpeople.com") hello@thecontrollerpeople.com]
+
+					.faq-wrapper
+						.contact-heading
+							h3 FAQ
+
+						.faq-acordeon
+							dl.acordeon-items
+								dt.acordeon-heading
+									.acordeon-icon
+									| How do i remap my ClickSticks?
+								dd.acordeon-content
+									| Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Curabitur tempus porttitor. Cras mattis consectetur purus sit amet fermentum. How to create.
+							dl.acordeon-items
+								dt.acordeon-heading
+									.acordeon-icon
+									| Do you use official Sony controllers?
+								dd.acordeon-content
+									| Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Curabitur tempus porttitor. Cras mattis consectetur purus sit amet fermentum. How to create.
+							dl.acordeon-items
+								dt.acordeon-heading
+									.acordeon-icon
+									| MOD KIT: Some of my buttons are not working after installing the mod kit
+								dd.acordeon-content
+									| Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Curabitur tempus porttitor. Cras mattis consectetur purus sit amet fermentum. How to create.
+
+block footer
+	include include/footer

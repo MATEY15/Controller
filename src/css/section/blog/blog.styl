@@ -1,0 +1,351 @@
+.container.container-blog
+	max-width 1080px
+
+.section-blog
+	background: #080A18
+	padding-top 60px
+	padding-bottom 54px
+	overflow hidden
+	@media screen and (max-width: 540px)
+		padding-top 20px
+		padding-bottom 30px
+	
+	.container
+		position relative
+	
+	.heading-default
+		margin-bottom 62px
+		@media screen and (max-width: 540px)
+			margin-bottom 52px
+
+.bg-blog
+	position absolute
+	left calc(100% - 80px)
+	top -196px
+	@media screen and (max-width: 540px)
+		left calc(100% - 170px)
+		top -157px
+	img
+		max-width inherit !important
+
+.heading-default
+	h1
+		color: #ffffff
+		font-family: fPSB
+		font-size: 67px
+		line-height: 72px
+
+.blog-items
+	display flex
+	flex-direction column
+	max-width 340px
+	margin 0 auto
+	background: #12162D
+	
+	.blog-items--img
+		min-height 250px
+		@media screen and (max-width: 540px)
+			min-height 208px
+		
+		img
+			@media screen and (max-width: 540px)
+				width 100%
+				height auto
+	
+	.blog-items--info
+		padding 36px 34px 28px
+		@media screen and (max-width: 540px)
+			padding 36px 30px 28px
+	
+	.name-blogPost
+		color: #ffffff
+		font-family: fPSB
+		font-size: 19px
+		line-height 24px
+		max-width 230px
+		margin-bottom 22px
+
+	.date-blogPost
+		color: #ffffff
+		font-family: fPSB
+		font-size: 13px
+		line-height: 33px
+
+.blog-wrapper
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin -35px -15px
+	margin-bottom 5px
+	@media screen and (max-width: 991px)
+		margin -20px -10px
+		margin-bottom 15px
+	@media screen and (max-width: 540px)
+		margin -10px
+		margin-bottom 15px
+	
+	.blog-col
+		width calc(100% / 3)
+		padding 35px 15px
+		@media screen and (max-width: 991px)
+			padding 20px 10px
+		@media screen and (max-width: 854px)
+			width calc(100% / 2)
+		@media screen and (max-width: 540px)
+			width 100%
+			padding 10px
+
+.navigation
+	ul
+		display flex
+		flex-direction row
+		justify-content flex-end
+	
+	li
+		
+		&:not(:first-child)
+			margin-left 15px
+		
+		&.nav-prev,
+		&.nav-next
+			a
+				color: #ffffff
+				font-family: fPSB
+				font-size: 14px
+				brr(5px)
+			svg
+				fill #fff
+		
+		&.nav-prev
+			margin-right 7px
+			a
+				padding 11px 28px 11px 20px
+				background-color: #26d13d
+				svg
+					transform rotateY(180deg)
+					margin-right 6px
+		
+		&.nav-next
+			margin-left 22px
+			a
+				padding 11px 20px 11px 28px
+				background-color: #26d13d
+				svg
+					margin-left 6px
+			
+		
+		&.is-active
+		&:hover
+			a
+				background-color: #26d13d
+		a
+			display block
+			color: #ffffff
+			font-family: fPSB
+			font-size: 16px
+			min-width: 40px
+			padding 10px 15px 9px
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06)
+			border-radius: 14px
+			background-color: #12162d
+			text-align center
+			trn(.25s)
+
+
+// Post
+
+.section-post,
+.section-blog
+	img
+		max-width 100%
+
+.section-post
+	padding-top 50px
+	padding-bottom 70px
+	overflow hidden
+	@media screen and (max-width: 640px)
+		padding-top 65px
+		padding-bottom 5px
+	
+	.bg-triangle
+		@media screen and (max-width: 640px)
+			display none
+
+.container-post
+	max-width 860px
+	margin 0 auto
+	padding 0 20px
+
+.post-heading
+	text-align center
+	
+	h1
+		color: #ffffff
+		font-family: fPSB
+		font-size: 67px
+		line-height: 72px
+		margin-bottom 20px
+		@media screen and (max-width: 640px)
+			font-size 32px
+			line-height 42px
+	
+	.date-post
+		display block
+		color: #97abbf
+		font-family: fPSR
+		font-size: 14px
+
+.full-img
+	text-align center
+	margin-bottom 62px
+	@media screen and (max-width: 640px)
+		margin-bottom 44px
+	img
+		display block
+		margin 0 auto
+
+.container-post
+	.social-link
+		margin 32px auto
+		@media screen and (max-width: 640px)
+			margin 28px auto
+		ul
+			justify-content center
+	img
+		margin 32px 0
+		@media screen and (max-width: 640px)
+			margin 28px 0
+	
+	.height-60
+		height 60px
+		@media screen and (max-width: 640px)
+			height 12px
+
+.post-wrapper
+	
+	p
+		font-family: fPSL
+		font-size: 19px
+		line-height: 36px
+		margin 24px 0
+		min-height 1px
+		@media screen and (max-width: 640px)
+			font-size: 15px
+			line-height: 32px
+	strong, b
+		font-family: fPSR
+		font-weight normal
+	
+	h3
+		color: #ffffff
+		font-family: fPSR
+		font-size: 40px
+		margin-bottom 22px
+		@media screen and (max-width: 640px)
+			font-size 32px
+	
+.form-heading
+	h4
+		color: #ffffff
+		font-family: fABl
+		font-size: 21px
+		margin-bottom 29px
+
+.form-items--button
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	margin-top 54px
+	@media screen and (max-width: 640px)
+		margin-top 0
+	@media screen and (max-width: 480px)
+		flex-direction column-reverse
+		align-items flex-end
+		margin-top -8px
+
+.share-post
+	display flex
+	flex-direction row
+	align-items center
+	@media screen and (max-width: 480px)
+		margin 30px auto 0
+	
+	img
+		margin 0 !important
+
+p.share-post--name
+	color: #ffffff
+	font-family: fPSR
+	font-size: 19px
+	letter-spacing: 0.6px
+	margin 0
+	margin-right 40px
+	@media screen and (max-width: 480px)
+		display none
+
+
+
+.comment-wrapper
+	max-width 840px
+	margin 0 auto
+	padding-top 40px
+	padding-left 10px
+	padding-right 10px
+	@media screen and (max-width: 640px)
+		padding-top 16px
+		padding-left 20px
+		padding-right 20px
+
+
+.article-footer
+	
+	.heading-article
+		margin-bottom 38px
+		@media screen and (max-width: 540px)
+			text-align center
+		h3
+			color: #ffffff
+			font-family: fPSL
+			font-size: 31px
+			line-height: 49px
+	
+	.blog-wrapper
+		margin: 0 -15px 40px
+		
+		.blog-col
+			padding 0 15px
+			
+			@media screen and (max-width: 540px)
+				&:not(:first-child)
+					display none
+		
+		.blog-items
+			margin-bottom 30px
+
+.section-terms
+	overflow hidden
+	
+	.height-60
+		height 60px
+		@media screen and (max-width: 768px)
+			// display none
+	
+	.height-100
+		@media screen and (max-width: 854px)
+			display none
+
+.terms-wrapper
+	padding-top 60px
+	padding-bottom 70px
+	@media screen and (max-width: 640px)
+		padding-top 24px
+		padding-bottom 0
+	
+	h1
+		@media screen and (max-width: 640px)
+			font-size: 28px
+			line-height: 72px
+	h3
+		@media screen and (max-width: 640px)
+			font-size 24px

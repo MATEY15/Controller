@@ -1,0 +1,183 @@
+extends layout.pug
+
+block variabl
+	- var title = "My account"
+	- var pagecurent = "account"
+	- var showreturn = false
+	- var showPost = false
+	- var showArticle = false
+	- var containerSmall = false
+	- var cart = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-product
+
+			.controller-desc--bg.bg-top
+				.controller-white--bg-big
+
+			.product-main.product-main--full
+				.container
+					.product-view--custome.product-view--custome-white
+						.product-view--left
+							.product-view--head
+								p.product-name--heading
+									+iconSvg('20', '20', '0 0 20 20', 'icon-pallete')
+									| Custom Build
+
+							.product-view-img--wrap
+								.product-view-img
+									img(src="img/product/product-desctop.png", alt="").product-desctop
+									img(src="img/product/product-mobile.png", alt="").product-mobile
+
+						.product-view--right
+							.product-sidebar
+								.product-sidebar--head
+									h3 Front Shell
+									a(href="#").burger-default.burger-radio
+										span
+										span
+										span
+									.menu-radio
+										ul
+											li
+												a(href="#") Click Stick
+											li
+												a(href="#") IAS
+											li
+												a(href="#") Magic Grip
+											li
+												a(href="#") SST
+											li
+												a(href="#") Category
+											li
+												a(href="#").is-active Front Shell
+											li
+												a(href="#") Back Shell
+											li
+												a(href="#") Category
+								.product-sidebar--nav
+									ul.nav-sidebar
+										li
+											a(href="#").link-sidebar.link-sidebar--back.disable
+												+iconSvg('10', '10', '0 0 10 10', 'icon-arrow-next')
+												| BACK
+										li
+											a(href="#").link-sidebar.link-sidebar--next
+												| NEXT
+												+iconSvg('10', '10', '0 0 10 10', 'icon-arrow-next')
+
+								.product-sidebar--checked
+									.product-checked--wrap
+										.product-checked--item
+											h3
+												.champ-dot--icon.bg-dot--pink
+												| Chrome
+
+											.product-checked--checked
+												
+												label.radio-color
+													input(type="radio" name="radio" checked)
+													p.radio-color--text
+														span(data-gradient="linear-gradient(to right, #3023ae 0%, #53a0fd 48%, #b4ec51 100%)").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-gradient="linear-gradient(to right, #6c23ae 0%, #7fdb68 48%, #ecd551 100%)").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-gradient="linear-gradient(to right, #ae236b 0%, #fdec53 47%, #5189ec 100%)").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-gradient="linear-gradient(to right, #130e45 0%, #53a0fd 48%, #b4ec51 100%)").radio-view
+										
+										.product-checked--item
+											h3
+												.champ-dot--icon.bg-dot--rainbow
+												| Coloured
+											.product-checked--checked
+
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-gradient="linear-gradient(180deg, #ff2323 0%, #e0dede 100%)").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-gradient="linear-gradient(180deg, #b4ec51 0%, #429321 100%)").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-gradient="linear-gradient(180deg, #fad961 0%, #f76b1c 100%)").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-gradient="linear-gradient(180deg, #110d3e 0%, #8d1ed9 100%)").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-color="#000").radio-view
+
+										.product-checked--item
+											h3
+												.champ-dot--icon.bg-dot--pattern
+												| Pattern
+											.product-checked--checked
+
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio1.png").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio2.png").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio3.png").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio4.png").radio-view
+
+										.product-checked--item
+											h3
+												.champ-dot--icon.bg-dot--ellite
+												| Elite #[span Pro Series]
+											.product-checked--checked
+
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio5.png").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio6.png").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio7.png").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio8.png").radio-view
+												label.radio-color
+													input(type="radio" name="radio")
+													p.radio-color--text
+														span(data-images="bg-radio9.png").radio-view
+
+								.product-checked--button
+									a(href="#").button.button-tocard
+										span.price-cart £63.00
+										| + ADD TO CART
+
+block footer
+	include include/footer

@@ -1,0 +1,274 @@
+extends layout.pug
+
+block variabl
+	- var title = "My account"
+	- var pagecurent = "account"
+	- var showreturn = true
+	- var showPost = true
+	- var showArticle = false
+	- var containerSmall = true
+	- var cart = true
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-product
+
+			.controller-desc--bg
+				.controller-desc--bg-big
+				.controller-desc--bg-small
+
+			.product-main
+				.container
+					.product-view
+						.product-img
+							img(src="img/click-stick.png", alt="")
+						.product-information
+							.product-info--head
+								h2 ClickStick Mod Kit
+								p.product-price £28.00
+								.counter-product
+									button.button.by-now BUY NOW
+
+								//- .dispatch-wrapper
+									.dispatch-items
+										p Build time: #[span.deliveri-day 2d]
+										span.icon-info i
+
+									.dispatch-items
+										label.dispatch-checkbox
+											input(type="checkbox")
+											p.dispatch-text Priority Dispatch ( 48h ) #[span +$25]
+
+							.product-option
+								.product-option--items
+									h3 Controller Type
+
+									.custom-select
+										select
+											option(value="0") Type 1 Controller
+											option(value="1") Type 2 Controller
+											option(value="2") Type 3 Controller
+											option(value="3") Type 4 Controller
+											option(value="4") Type 5 Controller
+									p Check carefully. Mod kits are all different so make sure you pick the one which will fit your controller. #[a(href="#") See Description]
+
+								.product-option--items
+									label.dispatch-checkbox.checkbox-option
+										input(type="checkbox")
+										p.dispatch-text Priority Dispatch ( 48h ) &nbsp; #[span +$25] #[span.icon-info.icon-info--big i]
+
+									.product-option--wrap.disable-block
+										.product-option--fifty
+											label.name-select Left ( L1, L2 side )
+											.custom-select
+												select
+													option(value="0") X
+													option(value="1") Y
+													option(value="2") Z
+										.product-option--fifty
+											label.name-select Right ( R1, R2 side )
+											.custom-select
+												select
+													option(value="0") Circle
+													option(value="1") Triangle
+													option(value="2") Triangle 2
+													option(value="2") Triangle 3
+
+			.product-description
+
+				.container-980
+					.tab-container
+						.tab-heading--desc
+							ul.tab-link.tab-link--desc
+								li  Reviews #[span (6)]
+								li Item Description
+								li Instalation Videos
+								li Which Type
+								li FAQ
+								li Help
+							a(href="#").button.button-review + Write Review
+						.tab-hidde.tab-hide--desc
+							.pane
+								.comment-wrap
+									.comment-items
+										.comment-items--main
+											.comment-items--img.img-center--width
+												img(src="img/comment/comment1.jpg", alt="")
+											.comment-items--text
+												h4.name-comment
+													| Verna Hicks rated it
+													.rating-gefault
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star.is-active
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+												p.game-comment Game : #[span Call of Duty Modern Warefare 2]
+												p.text-comment Love this controller - it’s awesome !
+										.comment-items--date
+											span Mar 23, 2017
+									.comment-items
+										.comment-items--main
+											.comment-items--img.img-center--width
+												img(src="img/comment/comment2.jpg", alt="")
+											.comment-items--text
+												h4.name-comment
+													| Verna Hicks rated it
+													.rating-gefault
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star.is-active
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+												p.game-comment Game : #[span Call of Duty Modern Warefare 2]
+												p.text-comment Love this controller - it’s awesome !
+										.comment-items--date
+											span Mar 23, 2017
+									.comment-items
+										.comment-items--main
+											.comment-items--img.img-center--width
+												img(src="img/comment/comment3.jpg", alt="")
+											.comment-items--text
+												h4.name-comment
+													| Verna Hicks rated it
+													.rating-gefault
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+														span.rating-star
+															+iconSvg('15', '15', '0 0 15 15', 'icon-star1')
+															+iconSvg('16', '15', '0 0 16 15', 'icon-star2')
+												p.game-comment Game : #[span Call of Duty Modern Warefare 2]
+												p.text-comment Love this controller - it’s awesome !
+										.comment-items--date
+											span Mar 23, 2017
+
+									.sub--comment-items
+										.sub--comment--img.img-center--width
+											img(src="img/comment/comment-default.jpg", alt="")
+										.sub--comment--text
+											h4 Glad to hear that !
+											p The Controller People
+
+							.pane
+								b If you are not good with small, fiddly parts then we do not recommend buying the mod kit. Please inspect the tutorial videos carefully before making your decision.
+
+								strong Please choose the correct mod kit for your controllers. There are different version PS4 controllers and all mod kits are different. Pick carefully and ask anything you are not sure of before purchase.
+
+								p Simply insert the mod kit into your own ps4 controller and your good-to-go. Buttons will have been configured by us using your specifications above. The MOD kit will be sent to you pre-soldered so all you have to do is place it into your controller. The most complicated thing you will have to do is drill 2 holes into your controller shell.
+
+								p NO Gluing. NO soldering. NO Wiring.
+
+							.pane
+								h3.green These Videos Are Intended ONLY AS A GUIDE
+								.height-15
+								p If you do not think you will be comfortable installing the kit then please look at our
+									strong.green Tournament Ready Controllers
+								img(src="img/img-product--desc.jpg", alt="").mr-30
+								img(src="img/img-product--desc.jpg", alt="")
+
+							.pane
+								strong Which Type Mod kit do i need?
+									| Take off the back shell from your controller and compare your motherboard with the following circuit boards. This is the most accurate way of identifying your generation controll.
+
+								a(href="#").button.button-download
+									span.icon-text
+										+iconSvg('17', '18', '0 0 17 18', 'icon-download')
+										| Logic Board Type Download
+									span 1.2 Mb
+
+								strong If you are still struggling with identifying your controller then please get in touch and we can help. We are available on #[a(href="#") Facebook] or #[a(href="#") Email]. We will need a picture of your motherboard inside the controller.
+
+							.pane
+								.faq-description
+									dl
+										dt Which Generation Controller Do I Have?
+										dd
+											p Please check the sticker which is at the back of your controller. There should be a serial number on the left side which will correspond with the above list, under “Which Generation Controller Do I Have?”.
+											p If your Sticker has worn and the serial number is not clear then the best thing to do would be to open your controller and check the circuit board inside. Compare the circuit board inside with the pictures above. This will ensure you have the correct version.
+									dl
+										dt What buttons will the ClickSticks be mapped to?
+										dd
+											p There is no default configuration for the MOD kits.
+											p You can pick any two buttons from the following choices:
+											p 
+												| TRIANGLE, X, SQUARE, O, #[br]
+												| UP, DOWN, LEFT, RIGHT, #[br]
+												| R1 R2 L1 L2
+											p L3 and R3 cannot be mapped to unless you solder the points pins yourself which are on the controller. We can advise if needed.
+											p You can also have remappable ClickSticks which allow you to change the button layout of your ClickSticks at any time. Remappable Clicksticks can only be remapped to the following buttons: TRIANGLE, X, SQUARE, O,
+											p UP, DOWN, LEFT, RIGHT.
+									dl
+										dt How do i remap my ClickSticks?
+										dd
+											p If you have bought remappable ClickSticks then remapping is very easy. Just hold down the desired button along with the ClickStick for roughly 10 – 12 seconds. As long as you hold both, together for the time period then you should see a little flash in the lightbar to indicate the change.
+
+											p So for example, to change the ClickStick to TRIANGLE:
+											p
+												| 1. Hold down TRIANGLE #[br]
+												| 2. Hold down ClickStick. #[br]
+												| 3. Hold both down simultaneously for 12 seconds. #[br]
+												| 4. ClickStick will now be remapped to Triangle button #[br]
+												| PS: You cannot have 2 of the same button remapped to the ClickSticks.
+									dl
+										dt What does the MOD Kit contain?
+										dd
+											p All MOD kits come with either Stud or Trigger ClickSticks. The ClickSticks are custom built to your own individual specification using the options above. We also include stickers for the back of your controller.
+									dl
+										dt Which tools will i need?
+										dd
+											p
+												| Essential #[br]
+												| Philips Screwdriver: PH00 #[br]
+												| Drill with 5mm drill piece
+
+											p Optional #[br]
+												| Prying Tool: handy to open the controller.
+									dl
+										dt Are the kits hard to install?
+										dd
+											p The MOD kits are generally pretty easy to install. The kits are designed to clip straight into the controller without the need for any gluing or soldering.
+											p The only manual work needed is to drill the holes onto your back shell. This is where the sticks will protrude for you to add on the ClickSticks. We recommend using a 5mm drill piece with the below measurements acting as a guide:
+											img(src="img/alignmemt.png", alt="")
+											p If you are not good with small, fiddly parts then we wouldn’t recommend buying the mod kit. Please inspect the tutorial videos carefully before making your decision.
+
+							.pane
+								p Help
+
+
+
+block footer
+	include include/footer

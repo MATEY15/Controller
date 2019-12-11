@@ -1,0 +1,88 @@
+extends layout.pug
+
+block variabl
+	- var title = "Shop"
+	- var pagecurent = "shop"
+	- var showreturn = true
+	- var showPost = false
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.section-blog
+			.container.container-blog
+
+				.bg-blog
+					img(src="img/blog_shape.svg", alt="")
+
+				.heading-default
+					h1 Blog
+
+				.blog-wrapper
+
+					.blog-col
+						a(href="#").blog-items
+							.blog-items--img.img-center--height
+								img(src="img/blog-post/blog_image_1.jpg", alt="")
+							.blog-items--info
+								p.name-blogPost The Ultimate Game Changers
+								span.date-blogPost on Jun 24, 2019
+					.blog-col
+						a(href="#").blog-items
+							.blog-items--img.img-center--height
+								img(src="img/blog-post/blog_image_2.jpg", alt="")
+							.blog-items--info
+								p.name-blogPost Free Shiping for US Customers
+								span.date-blogPost on Jun 24, 2019
+					.blog-col
+						a(href="#").blog-items
+							.blog-items--img.img-center--height
+								img(src="img/blog-post/blog_image_3.jpg", alt="")
+							.blog-items--info
+								p.name-blogPost VR Customizations coming soon
+								span.date-blogPost on Jun 24, 2019
+					.blog-col
+						a(href="#").blog-items
+							.blog-items--img.img-center--height
+								img(src="img/blog-post/blog_image_4.jpg", alt="")
+							.blog-items--info
+								p.name-blogPost The Ultimate Game Changers
+								span.date-blogPost on Jun 24, 2019
+					.blog-col
+						a(href="#").blog-items
+							.blog-items--img.img-center--height
+								img(src="img/blog-post/blog_image_5.jpg", alt="")
+							.blog-items--info
+								p.name-blogPost Free Shiping for US Customers
+								span.date-blogPost on Jun 24, 2019
+					.blog-col
+						a(href="#").blog-items
+							.blog-items--img.img-center--height
+								img(src="img/blog-post/blog_image_6.jpg", alt="")
+							.blog-items--info
+								p.name-blogPost VR Customizations coming soon
+								span.date-blogPost on Jun 24, 2019
+
+				.navigation
+					ul
+						//- li.nav-prev
+							a(href="#")
+								+iconSvg('10', '10', '0 0 10 10', 'icon-arrow-next')
+								| Prev
+						li.is-active
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li.nav-next
+							a(href="#")
+								| Next
+								+iconSvg('10', '10', '0 0 10 10', 'icon-arrow-next')
+
+
+block footer
+	include include/footer

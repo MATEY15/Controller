@@ -1,0 +1,107 @@
+extends layout.pug
+
+block variabl
+	- var title = "Checkout"
+	- var pagecurent = "checkout"
+	- var showreturn = false
+	- var showPost = false
+	- var showArticle = false
+	- var containerSmall = true
+	- var cart = false
+
+block header
+	include include/header
+
+block main
+	main.section_main
+
+		section.checkout-section
+			
+			.checkout-heading
+				.container-small
+					ul.heading-load
+						li
+							a(href="#").is-active
+								span.icon-check
+								| CART
+						li
+							a(href="#")
+								span.icon-check
+								| SHIPPING
+						li
+							a(href="#")
+								span.icon-check
+								| PAYMENT
+
+			.container-small
+				.checkout-main.step-one
+					.checkout-col
+						.checkout-items
+							h3 Don’t forget to add
+							.product-checkout--wrapper
+								.product-checkout--item
+									a(href="#").product-checkout--img.img-center--width
+										img(src="img/product/controller-product.png", alt="")
+									.product-checkout--text
+										a(href="#").name Yellow Demon
+										span.price € 99.90
+										a(href="#").button.button-add +ADD
+								.product-checkout--item
+									a(href="#").product-checkout--img.img-center--width
+										img(src="img/product/controller-product.png", alt="")
+									.product-checkout--text
+										a(href="#").name Yellow Demon
+										span.price € 99.90
+										a(href="#").button.button-add +ADD
+
+					.checkout-col
+						.checkout-items
+							.form-items--black
+								h3 Your Cart : #[span.count 2]
+							
+							.product-checkout--wrapper.product-checkout--total
+								.product-checkout--item
+									a(href="#").product-checkout--img.img-center--width
+										img(src="img/product/controller-product.png", alt="")
+									.product-checkout--text
+										a(href="#").name Yellow Demon
+										span.price € 99.90
+										p View Detials
+										.qty-input.product-checkout--counter
+											i.less
+											input(type="text" value="3")
+											i.more
+										a(href="#").delete-product Remove
+											+iconSvg('13', '12', '0 0 13 12', 'icon-close2')
+
+								.product-checkout--item
+									a(href="#").product-checkout--img.img-center--width
+										img(src="img/product/controller-product.png", alt="")
+									.product-checkout--text
+										a(href="#").name Yellow Demon
+										span.price € 99.90
+										p View Detials
+										.qty-input.product-checkout--counter
+											i.less
+											input(type="text" value="3")
+											i.more
+										a(href="#").delete-product Remove
+											+iconSvg('13', '12', '0 0 13 12', 'icon-close2')
+								
+							.product-sum
+								.product-sum--item
+									p Subtotal
+									span $200
+								.product-sum--item
+									p TOTAL
+									span $200
+								.form-items--wrap
+									.col-fifty
+										p Promo Code
+									.col-fifty
+										input(type="text" placeholder="Paste code here").input-sum
+				
+							button.button.button-checkout CHECKOUT
+
+block footer
+	include include/footer

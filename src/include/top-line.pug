@@ -20,14 +20,42 @@
 	
 		.user-block
 			ul
-				li
-					a(href="#")
-						+iconSvg('16', '19', '0 0 16 19', 'icon-cart')
+				if cart
+					li.card-view
+						a(href="#")
+							+iconSvg('16', '19', '0 0 16 19', 'icon-cart')
+							span.count-cart 2
+						.hidden-cart
+							.cart-head--items
+								.cart-head--items-img
+									a(href="#")
+										img(src="img/game-mini1.png", alt="")
+								.cart-head--items-text
+									h4
+										a(href="#") Yellow Demon
+									p.cart-head--price € 99.90
+							.cart-head--items
+								.cart-head--items-img
+									a(href="#")
+										img(src="img/game-mini2.png", alt="")
+								.cart-head--items-text
+									h4
+										a(href="#") Yellow Demon
+									p.cart-head--price € 99.90
+							.cart-head--button
+								a(href="#").button.button-cart
+									| GO TO CART
+									+iconSvg('10', '10', '0 0 10 10', 'icon-arrow-next')
+				else
+					li
+						a(href="#")
+							+iconSvg('16', '19', '0 0 16 19', 'icon-cart')
+
 				li.user-list
-					a(href="#")
+					a(href="#login-popup").popup
 						+iconSvg('18', '18', '0 0 18 18', 'icon-user')
 
-		.burger-menu
+		.burger-default.burger-menu
 			span
 			span
 			span

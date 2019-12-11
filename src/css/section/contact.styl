@@ -1,0 +1,131 @@
+.contact-wrapper
+	padding-top 60px
+	padding-bottom 105px
+	max-width 690px
+	@media screen and (max-width: 600px)
+		padding-top 22px
+		padding-bottom 30px
+	
+	.height-60
+		height 60px
+
+.contact-heading
+	margin-bottom 46px
+	@media screen and (max-width: 600px)
+		margin-bottom 22px
+	h3, h1
+		color: #ffffff
+		font-family: fPSB
+		font-size: 51px
+		line-height: 72px
+		@media screen and (max-width: 600px)
+			font-size 32px
+	p
+		color: #8e8f9c
+		font-family: fPSL
+		font-size: 17px
+		letter-spacing: 0.1px
+		line-height: 26px
+		margin-top 10px
+		@media screen and (max-width: 600px)
+			margin-top 2px
+
+.contact-form
+	.form--button
+		margin-top 30px
+	.button-send
+		color #fff
+		font-size 16px
+		font-family: fPSBl
+		&.send-full
+			width 100%
+
+.direct-contact
+	margin-top 44px
+	margin-bottom 56px
+	@media screen and (max-width: 600px)
+		margin-top 32px
+		margin-bottom 10px
+	p	
+		font-family: fPSL
+		font-size: 17px
+		letter-spacing: 0.1px
+		line-height: 26px
+		color: #8e8f9c
+	a
+		color: #26d13d
+
+.faq-wrapper
+	.contact-heading
+		margin-bottom 20px
+		@media screen and (max-width: 600px)
+			margin-bottom 0
+
+.faq-acordeon
+	position relative
+
+.acordeon-items
+	border-radius: 3px
+	background-color: #0e1126
+	padding 13px 15px
+	margin 0
+	&:not(:last-child)
+		margin-bottom 18px
+		@media screen and (max-width: 600px)
+			margin-bottom 11px
+	.acordeon-heading
+		display flex
+		flex-direction row
+		align-items center
+		color: #ffffff
+		font-family: fPSB
+		font-size: 17px
+		cursor pointer
+		user-select none
+		@media screen and (max-width: 600px)
+			align-items flex-start
+		&.is-active
+			.acordeon-icon
+				background: #26d13d
+				&:after
+					display none
+	.acordeon-content
+		color: #ffffff
+		font-family: fPSL
+		font-size: 15px
+		line-height: 35px
+		padding-left 55px
+		padding-top 10px
+		padding-bottom 6px
+		margin 0
+		display none
+		@media screen and (max-width: 600px)
+			font-size: 15px
+			line-height: 20px
+	
+.acordeon-icon
+	position relative
+	width: 30px
+	min-width: 30px
+	height: 30px
+	border-radius: 3px
+	background-color: #282e59
+	margin-right 24px
+	trn(.2s)
+	
+	&:before,
+	&:after
+		position absolute
+		top 50%
+		left 50%
+		display block
+		content ''
+		tt(-50%, -50%)
+		background: #fff
+	
+	&:before
+		width 8px
+		height 2px
+	&:after
+		height 8px
+		width 2px
