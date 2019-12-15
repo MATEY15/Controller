@@ -1,7 +1,15 @@
 //= jquery.min.js
+//= barba.min.js
 //= jquery.magnific-popup.min.js
 //= slick.min.js
 //= select.js
+//= PageScroll2id.min.js
+
+// Barba.Pjax.start();
+
+$(".controller-hover--img a").mPageScroll2id({
+    offset:50
+});
 
 window.onload = function(){
   // $("body").toggleClass('opacity');

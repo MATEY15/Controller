@@ -31,11 +31,16 @@ block main
 								h2 I.A.S
 								p.product-price £12.00
 								.counter-product
+									.qty-input
+										i.less
+										input(type="text" value="3")
+										i.more
+
 									button.button.by-now BUY NOW
 
 							.product-option
 								.product-option--items
-									h3.option-head Click Sticks #[span.icon-info i]
+									h3.option-head I.A.S #[span.icon-info i]
 									.product-checked
 										label.radio-color.no-checked
 											input(type="radio" name="radio" checked)
